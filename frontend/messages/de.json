@@ -1,0 +1,26 @@
+{
+  "Navbar": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cta": "Projekt starten"
+  },
+  "Hero": {
+    "eyebrow": "DIGITALE LÖSUNGEN MIT KI",
+    "title": "Wir gestalten digitale Erlebnisse, die Unternehmen voranbringen.",
+    "description": "Von durchdachtem Design und moderner Webentwicklung bis hin zu intelligenter Automatisierung helfen wir Unternehmen, ambitionierte Ideen in messbare Ergebnisse zu verwandeln.",
+    "primaryCta": "Projekt starten",
+    "secondaryCta": "Projekte entdecken",
+    "availability": "Offen für ausgewählte Projekte",
+    "visualLabel": "Von Ideen zu Wirkung",
+    "visualCaption": "Design · Technologie · Intelligenz",
+    "statLabel": "Unser Fokus",
+    "statValue": "Digitales Wachstum",
+    "floatingLabel": "Mit einem klaren Ziel entwickelt",
+    "floatingValue": "Bereit für das, was kommt.",
+    "footerTagline": "DIGITALES DENKEN. ECHTE WIRKUNG.",
+    "discover": "Unsere Leistungen entdecken"
+  }
+}

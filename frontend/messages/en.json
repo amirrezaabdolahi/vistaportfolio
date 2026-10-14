@@ -1,0 +1,26 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "work": "Our Work",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start a Project"
+  },
+  "Hero": {
+    "eyebrow": "AI-POWERED DIGITAL SOLUTIONS",
+    "title": "We build digital experiences that move businesses forward.",
+    "description": "From thoughtful design and modern web development to intelligent automation, we help businesses turn ambitious ideas into meaningful results.",
+    "primaryCta": "Start a Project",
+    "secondaryCta": "Explore Our Work",
+    "availability": "Available for selected projects",
+    "visualLabel": "Ideas into impact",
+    "visualCaption": "Design · Technology · Intelligence",
+    "statLabel": "What we focus on",
+    "statValue": "Digital growth",
+    "floatingLabel": "Built with purpose",
+    "floatingValue": "Made for what's next.",
+    "footerTagline": "DIGITAL THINKING. REAL-WORLD IMPACT.",
+    "discover": "Discover what we do"
+  }
+}

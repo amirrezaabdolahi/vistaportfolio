@@ -27,7 +27,34 @@ const inter = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-sans",
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const estedad = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Estedad/Estedad-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Estedad/Estedad-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Estedad/Estedad-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Estedad/Estedad-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-estedad",
   display: "swap",
 });
 
@@ -42,28 +69,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vista — AI & Digital Solutions",
+  title: {
+    default: "Vista — AI & Digital Solutions",
+    template: "%s | Vista",
+  },
   description:
     "We build digital experiences, AI solutions, and products that move businesses forward.",
 };
 
-export default function RootLayout({
-  children,
-}: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      suppressHydrationWarning
       className={cn(
         "h-full",
         "antialiased",
         inter.variable,
+        estedad.variable,
         geistSans.variable,
         geistMono.variable,
         "font-sans",
       )}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }
-

@@ -1,0 +1,26 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "work": "Proyectos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Iniciar un proyecto"
+  },
+  "Hero": {
+    "eyebrow": "SOLUCIONES DIGITALES CON IA",
+    "title": "Creamos experiencias digitales que impulsan a las empresas.",
+    "description": "Desde el diseño estratégico y el desarrollo web moderno hasta la automatización inteligente, ayudamos a las empresas a convertir ideas ambiciosas en resultados concretos.",
+    "primaryCta": "Iniciar un proyecto",
+    "secondaryCta": "Explorar proyectos",
+    "availability": "Disponibles para proyectos seleccionados",
+    "visualLabel": "De las ideas al impacto",
+    "visualCaption": "Diseño · Tecnología · Inteligencia",
+    "statLabel": "Nuestro enfoque",
+    "statValue": "Crecimiento digital",
+    "floatingLabel": "Creado con propósito",
+    "floatingValue": "Preparados para lo que viene.",
+    "footerTagline": "PENSAMIENTO DIGITAL. IMPACTO REAL.",
+    "discover": "Descubre lo que hacemos"
+  }
+}
