@@ -56,11 +56,13 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher />
 
-          <Button asChild className="h-11 rounded-full px-5">
-            <Link href="#contact">
-              {t("cta")}
-              <ArrowUpRight className="ml-1 size-4" />
-            </Link>
+          <Button
+            nativeButton={false}
+            className="h-11 rounded-full px-5"
+            render={<Link href="#contact" />}
+          >
+            {t("cta")}
+            <ArrowUpRight className="ms-1 size-4" />
           </Button>
         </div>
 
@@ -96,11 +98,15 @@ export function Navbar() {
             <div className="flex items-center justify-between gap-4 border-t border-black/[0.06] pt-5">
               <LanguageSwitcher />
 
-              <Button asChild className="rounded-full">
-                <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  {t("cta")}
-                  <ArrowUpRight className="ml-1 size-4" />
-                </Link>
+              <Button
+                nativeButton={false}
+                className="rounded-full"
+                render={
+                  <Link href="#contact" onClick={() => setIsMenuOpen(false)} />
+                }
+              >
+                {t("cta")}
+                <ArrowUpRight className="ms-1 size-4" />
               </Button>
             </div>
           </nav>
