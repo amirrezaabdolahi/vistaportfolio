@@ -1,10 +1,10 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 import { ChevronDown, Languages } from "lucide-react";
 
 import type { AppLocale } from "@/i18n/routing";
-import { usePathname, useRouter } from "@/i18n/navigation";
 
 const languages: { locale: AppLocale; label: string }[] = [
   { locale: "en", label: "EN" },
@@ -17,12 +17,14 @@ const languages: { locale: AppLocale; label: string }[] = [
 export function LanguageSwitcher() {
   const locale = useLocale() as AppLocale;
   const router = useRouter();
-  const pathname = usePathname();
 
   function handleLanguageChange(nextLocale: AppLocale) {
     if (nextLocale === locale) return;
 
-    router.replace(pathname, { locale: nextLocale });
+    // This is a single-page portfolio: navigate directly to the selected
+    // locale root, never pass a localized pathname through locale routing.
+    const hash = typeof window !== "undefined" ? window.location.hash : "";
+    router.replace(`/${nextLocale}${hash}`);
   }
 
   return (
