@@ -22,5 +22,36 @@
     "floatingValue": "Preparados para lo que viene.",
     "footerTagline": "PENSAMIENTO DIGITAL. IMPACTO REAL.",
     "discover": "Descubre lo que hacemos"
+  },
+  "Services": {
+    "eyebrow": "QUÉ HACEMOS",
+    "title": "Tecnología que impulsa tu negocio.",
+    "description": "Combinamos estrategia, diseño, ingeniería e IA para crear experiencias digitales que ayudan a las empresas a crecer.",
+    "inquireAbout": "Hablemos de {service}",
+    "webDevelopment": {
+      "title": "Desarrollo web",
+      "description": "Sitios web de alto rendimiento y productos digitales escalables diseñados para alcanzar tus objetivos de negocio.",
+      "imageAlt": "Servicios de desarrollo web"
+    },
+    "uiUxDesign": {
+      "title": "Diseño UI/UX",
+      "description": "Interfaces intuitivas y cuidadas que convierten ideas complejas en experiencias de usuario sencillas.",
+      "imageAlt": "Servicios de diseño UI y UX"
+    },
+    "aiAutomation": {
+      "title": "IA y automatización",
+      "description": "Soluciones inteligentes y flujos automatizados que reducen las tareas repetitivas y abren nuevas posibilidades.",
+      "imageAlt": "Servicios de IA y automatización de flujos de trabajo"
+    },
+    "seoMarketing": {
+      "title": "SEO y marketing digital",
+      "description": "Estrategias basadas en datos para mejorar la visibilidad en buscadores, atraer al público adecuado y favorecer un crecimiento sostenible.",
+      "imageAlt": "Servicios de SEO y marketing digital"
+    },
+    "itConsulting": {
+      "title": "Consultoría de TI",
+      "description": "Estrategia tecnológica práctica y orientación técnica para tomar decisiones empresariales bien fundamentadas.",
+      "imageAlt": "Servicios de consultoría de TI"
+    }
   }
 }
