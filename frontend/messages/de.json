@@ -22,5 +22,36 @@
     "floatingValue": "Bereit für das, was kommt.",
     "footerTagline": "DIGITALES DENKEN. ECHTE WIRKUNG.",
     "discover": "Unsere Leistungen entdecken"
+  },
+  "Services": {
+    "eyebrow": "UNSER ANGEBOT",
+    "title": "Technologie, die Ihr Unternehmen voranbringt.",
+    "description": "Wir verbinden Strategie, Design, Engineering und KI, um digitale Erlebnisse zu schaffen, die Unternehmen wachsen lassen.",
+    "inquireAbout": "{service} besprechen",
+    "webDevelopment": {
+      "title": "Webentwicklung",
+      "description": "Leistungsstarke Websites und skalierbare digitale Produkte, ausgerichtet auf Ihre Geschäftsziele.",
+      "imageAlt": "Webentwicklungsservice"
+    },
+    "uiUxDesign": {
+      "title": "UI/UX-Design",
+      "description": "Intuitive, durchdachte Oberflächen, die komplexe Ideen in mühelose Nutzererlebnisse verwandeln.",
+      "imageAlt": "UI- und UX-Designservice"
+    },
+    "aiAutomation": {
+      "title": "KI und Automatisierung",
+      "description": "Intelligente Lösungen und automatisierte Abläufe, die Routinearbeit reduzieren und neue Möglichkeiten eröffnen.",
+      "imageAlt": "Service für KI und Workflow-Automatisierung"
+    },
+    "seoMarketing": {
+      "title": "SEO und digitales Marketing",
+      "description": "Datengestützte Strategien für bessere Sichtbarkeit in Suchmaschinen, relevante Zielgruppen und nachhaltiges Wachstum.",
+      "imageAlt": "Service für SEO und digitales Marketing"
+    },
+    "itConsulting": {
+      "title": "IT-Beratung",
+      "description": "Praktische Technologiestrategien und technische Beratung für fundierte Geschäftsentscheidungen.",
+      "imageAlt": "IT-Beratungsservice"
+    }
   }
 }
