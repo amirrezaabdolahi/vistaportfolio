@@ -1,10 +1,10 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
 import { ChevronDown, Languages } from "lucide-react";
 
-import type { AppLocale } from "@/i18n/routing";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { routing, type AppLocale } from "@/i18n/routing";
 
 const languages: { locale: AppLocale; label: string }[] = [
   { locale: "en", label: "EN" },
@@ -16,13 +16,27 @@ const languages: { locale: AppLocale; label: string }[] = [
 
 export function LanguageSwitcher() {
   const locale = useLocale() as AppLocale;
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
 
   function handleLanguageChange(nextLocale: AppLocale) {
     if (nextLocale === locale) return;
 
-    router.replace(pathname, { locale: nextLocale });
+    // Replace the existing locale segment instead of passing an already
+    // localized pathname into next-intl's locale-aware router.
+    const segments = pathname.split("/");
+    const currentLocaleIndex = segments.findIndex((segment, index) =>
+      index === 1 && routing.locales.some((supportedLocale) => supportedLocale === segment)
+    );
+
+    if (currentLocaleIndex === 1) {
+      segments[1] = nextLocale;
+    } else {
+      segments.splice(1, 0, nextLocale);
+    }
+
+    const nextPathname = segments.join("/") || `/${nextLocale}`;
+    router.replace(nextPathname);
   }
 
   return (
