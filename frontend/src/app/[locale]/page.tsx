@@ -8,10 +8,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <Hero />
-        <ServicesSection />
-      </main>
+      <Hero />
+      <ServicesSection />
     </>
   );
 }
