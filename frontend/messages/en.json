@@ -22,5 +22,36 @@
     "floatingValue": "Made for what's next.",
     "footerTagline": "DIGITAL THINKING. REAL-WORLD IMPACT.",
     "discover": "Discover what we do"
+  },
+  "Services": {
+    "eyebrow": "WHAT WE DO",
+    "title": "Technology that moves your business forward.",
+    "description": "We combine strategy, design, engineering, and AI to build digital experiences that help businesses grow.",
+    "inquireAbout": "Discuss {service}",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "High-performance websites and scalable digital products built around your business goals.",
+      "imageAlt": "Web development service"
+    },
+    "uiUxDesign": {
+      "title": "UI/UX Design",
+      "description": "Intuitive, thoughtful interfaces that turn complex ideas into effortless user experiences.",
+      "imageAlt": "UI and UX design service"
+    },
+    "aiAutomation": {
+      "title": "AI & Automation",
+      "description": "Intelligent solutions and automated workflows that reduce repetitive work and unlock new possibilities.",
+      "imageAlt": "AI and workflow automation service"
+    },
+    "seoMarketing": {
+      "title": "SEO & Digital Marketing",
+      "description": "Data-informed strategies that improve search visibility, attract relevant audiences, and support sustainable growth.",
+      "imageAlt": "SEO and digital marketing service"
+    },
+    "itConsulting": {
+      "title": "IT Consulting",
+      "description": "Practical technology strategy and technical guidance to help businesses make informed decisions.",
+      "imageAlt": "IT consulting service"
+    }
   }
 }
