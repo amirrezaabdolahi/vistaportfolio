@@ -53,5 +53,41 @@
       "description": "Praktische Technologiestrategien und technische Beratung für fundierte Geschäftsentscheidungen.",
       "imageAlt": "IT-Beratungsservice"
     }
+  },
+  "Projects": {
+    "eyebrow": "AUSGEWÄHLTE ARBEITEN",
+    "title": "Aus Ideen wird Realität.",
+    "description": "Eine Auswahl digitaler Erlebnisse, geprägt von durchdachtem Design, Engineering und intelligenter Technologie.",
+    "count": "04 ausgewählte Konzepte",
+    "categoriesLabel": "Projektkategorien",
+    "openProject": "Projekt ansehen: {project}",
+    "categories": {
+      "productDesign": "Produktdesign"
+    },
+    "saasDashboard": {
+      "title": "SaaS-Dashboard",
+      "description": "Eine übersichtliche Analyseerfahrung, die komplexe Unternehmensdaten verständlicher und besser nutzbar macht.",
+      "imageAlt": "Konzeptionelle Vorschau einer SaaS-Analyse-Dashboard-Oberfläche."
+    },
+    "ecommercePlatform": {
+      "title": "E-Commerce-Plattform",
+      "description": "Ein durchdachtes Einkaufserlebnis mit intuitiver Navigation, einfacher Produktentdeckung und einer nahtlosen Customer Journey.",
+      "imageAlt": "Konzeptionelle Vorschau eines Online-Shops mit Produkterkundung."
+    },
+    "aiAnalyticsPlatform": {
+      "title": "KI-Analyseplattform",
+      "description": "Ein intelligentes Analysekonzept, das Erkenntnisse und operative Informationen in einer fokussierten Oberfläche bündelt.",
+      "imageAlt": "Konzeptionelle Vorschau einer KI-gestützten Analyseplattform."
+    },
+    "fintechWebApp": {
+      "title": "Fintech-Webanwendung",
+      "description": "Ein Finanzanwendungskonzept mit klarer Datendarstellung, hoher Benutzerfreundlichkeit und fundierten Entscheidungen im Fokus.",
+      "imageAlt": "Konzeptionelle Vorschau einer Fintech-Webanwendung mit übersichtlichen Finanzdaten."
+    },
+    "cta": {
+      "title": "Sie planen ein Projekt?",
+      "description": "Machen wir aus Ihrer nächsten Idee etwas Bedeutungsvolles.",
+      "label": "Kontakt aufnehmen"
+    }
   }
 }

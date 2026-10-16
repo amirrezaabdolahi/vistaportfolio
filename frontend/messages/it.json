@@ -53,5 +53,41 @@
       "description": "Strategia tecnologica concreta e guida tecnica per prendere decisioni aziendali consapevoli.",
       "imageAlt": "Servizi di consulenza IT"
     }
+  },
+  "Projects": {
+    "eyebrow": "PROGETTI SELEZIONATI",
+    "title": "Diamo forma alle idee.",
+    "description": "Una selezione di esperienze digitali nate dall'incontro tra design attento, ingegneria e tecnologia intelligente.",
+    "count": "04 concept selezionati",
+    "categoriesLabel": "Categorie del progetto",
+    "openProject": "Visualizza il progetto: {project}",
+    "categories": {
+      "productDesign": "Product design"
+    },
+    "saasDashboard": {
+      "title": "Dashboard SaaS",
+      "description": "Un'esperienza di analisi essenziale, pensata per rendere i dati aziendali complessi più chiari e utili per le decisioni.",
+      "imageAlt": "Anteprima concettuale di una dashboard di analisi SaaS."
+    },
+    "ecommercePlatform": {
+      "title": "Piattaforma e-commerce",
+      "description": "Un'esperienza di acquisto digitale curata, con navigazione intuitiva, scoperta dei prodotti e un percorso cliente fluido.",
+      "imageAlt": "Anteprima concettuale di un negozio online con scoperta dei prodotti."
+    },
+    "aiAnalyticsPlatform": {
+      "title": "Piattaforma di analisi IA",
+      "description": "Un concept di analisi intelligente che riunisce insight e informazioni operative in un'interfaccia focalizzata.",
+      "imageAlt": "Anteprima concettuale di una piattaforma di analisi basata sull'intelligenza artificiale."
+    },
+    "fintechWebApp": {
+      "title": "Applicazione web fintech",
+      "description": "Un concept finanziario progettato attorno a dati chiari, facilità d'uso e decisioni più consapevoli.",
+      "imageAlt": "Anteprima concettuale di un'applicazione fintech con dati finanziari chiari."
+    },
+    "cta": {
+      "title": "Hai un progetto in mente?",
+      "description": "Trasformiamo la tua prossima idea in qualcosa di significativo.",
+      "label": "Parliamone"
+    }
   }
 }
