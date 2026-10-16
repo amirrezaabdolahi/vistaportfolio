@@ -7,6 +7,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { LanguageSwitcher } from "./language-switcher";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navigationItems = [
   { key: "services", href: "#services" },
@@ -29,7 +30,7 @@ export function Navbar() {
           onClick={() => setIsMenuOpen(false)}
         >
           <span className="flex size-9 items-center justify-center rounded-xl bg-black text-sm font-semibold tracking-tight text-white">
-            V
+            <Image alt="" src="/logo.png" width={48} height={48} />
           </span>
 
           <span className="text-xl font-semibold tracking-[-0.06em]">

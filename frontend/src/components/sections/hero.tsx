@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -102,7 +103,7 @@ export function Hero() {
                 <div className="relative flex size-[36%] items-center justify-center rounded-[1.75rem] border border-white/20 bg-neutral-950 shadow-[0_24px_80px_rgba(0,0,0,0.22)]">
                   <div className="absolute inset-2 rounded-[1.2rem] border border-white/10" />
                   <span className="text-5xl font-medium tracking-[-0.1em] text-white">
-                    V<span className="text-neutral-500">.</span>
+                    <Image alt="" src="/logo.png" width={120} height={120} />
                   </span>
                 </div>
 
