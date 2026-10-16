@@ -53,5 +53,41 @@
       "description": "Practical technology strategy and technical guidance to help businesses make informed decisions.",
       "imageAlt": "IT consulting service"
     }
+  },
+  "Projects": {
+    "eyebrow": "SELECTED WORK",
+    "title": "Ideas made real.",
+    "description": "A selection of digital experiences shaped by thoughtful design, engineering, and intelligent technology.",
+    "count": "04 selected concepts",
+    "categoriesLabel": "Project categories",
+    "openProject": "View project: {project}",
+    "categories": {
+      "productDesign": "Product Design"
+    },
+    "saasDashboard": {
+      "title": "SaaS Dashboard",
+      "description": "A streamlined analytics experience designed to make complex business data easier to understand and act on.",
+      "imageAlt": "Concept preview of a SaaS analytics dashboard interface."
+    },
+    "ecommercePlatform": {
+      "title": "E-commerce Platform",
+      "description": "A considered digital shopping experience focused on intuitive navigation, product discovery, and a seamless customer journey.",
+      "imageAlt": "Concept preview of an e-commerce storefront and product discovery experience."
+    },
+    "aiAnalyticsPlatform": {
+      "title": "AI Analytics Platform",
+      "description": "An intelligent analytics concept that brings insights and operational information into one focused interface.",
+      "imageAlt": "Concept preview of an AI-powered analytics platform interface."
+    },
+    "fintechWebApp": {
+      "title": "Fintech Web Application",
+      "description": "A finance-focused application concept built around clear data presentation, usability, and informed decision-making.",
+      "imageAlt": "Concept preview of a fintech web application with clear financial data."
+    },
+    "cta": {
+      "title": "Have a project in mind?",
+      "description": "Let's turn your next idea into something meaningful.",
+      "label": "Let's talk"
+    }
   }
 }
