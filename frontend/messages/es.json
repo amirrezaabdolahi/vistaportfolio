@@ -53,5 +53,41 @@
       "description": "Estrategia tecnológica práctica y orientación técnica para tomar decisiones empresariales bien fundamentadas.",
       "imageAlt": "Servicios de consultoría de TI"
     }
+  },
+  "Projects": {
+    "eyebrow": "TRABAJOS SELECCIONADOS",
+    "title": "Convertimos ideas en realidad.",
+    "description": "Una selección de experiencias digitales creadas con diseño meditado, ingeniería y tecnología inteligente.",
+    "count": "04 conceptos seleccionados",
+    "categoriesLabel": "Categorías del proyecto",
+    "openProject": "Ver proyecto: {project}",
+    "categories": {
+      "productDesign": "Diseño de producto"
+    },
+    "saasDashboard": {
+      "title": "Panel SaaS",
+      "description": "Una experiencia de analítica optimizada para comprender mejor los datos empresariales complejos y actuar a partir de ellos.",
+      "imageAlt": "Vista conceptual de una interfaz de panel de analítica SaaS."
+    },
+    "ecommercePlatform": {
+      "title": "Plataforma de comercio electrónico",
+      "description": "Una experiencia de compra digital cuidada, centrada en la navegación intuitiva, el descubrimiento de productos y un recorrido fluido.",
+      "imageAlt": "Vista conceptual de una tienda online y su experiencia de descubrimiento de productos."
+    },
+    "aiAnalyticsPlatform": {
+      "title": "Plataforma de analítica con IA",
+      "description": "Un concepto de analítica inteligente que reúne información clave y datos operativos en una interfaz centrada.",
+      "imageAlt": "Vista conceptual de una plataforma de analítica impulsada por inteligencia artificial."
+    },
+    "fintechWebApp": {
+      "title": "Aplicación web fintech",
+      "description": "Un concepto financiero centrado en presentar los datos con claridad, facilitar el uso y apoyar decisiones informadas.",
+      "imageAlt": "Vista conceptual de una aplicación fintech con datos financieros claros."
+    },
+    "cta": {
+      "title": "¿Tienes un proyecto en mente?",
+      "description": "Convirtamos tu próxima idea en algo significativo.",
+      "label": "Hablemos"
+    }
   }
 }
