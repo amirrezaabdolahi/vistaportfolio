@@ -161,5 +161,32 @@
     },
     "closing": "Il buon lavoro non è un mistero. Sai cosa succede dopo.",
     "cta": "Hai un progetto in mente? Parliamone."
+  },
+  "About": {
+    "eyebrow": "CHI È VISTA",
+    "title": "La tecnologia è lo strumento. Il progresso è lo scopo.",
+    "description": "Vista unisce strategia, design, ingegneria e IA per aiutare le aziende a risolvere problemi significativi, creare esperienze digitali migliori e avanzare con chiarezza.",
+    "philosophyLabel": "LA NOSTRA FILOSOFIA",
+    "philosophyTitle": "Partiamo da ciò che conta davvero.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Pensare prima di costruire",
+        "description": "Prima di decidere cosa realizzare, comprendiamo il problema, le persone coinvolte e gli obiettivi aziendali."
+      },
+      "makeComplexityUseful": {
+        "title": "Rendere utile la complessità",
+        "description": "Trasformiamo tecnologie complesse in esperienze chiare e accessibili, semplificando il lavoro quotidiano e le decisioni."
+      },
+      "designForWhatComesNext": {
+        "title": "Progettare per ciò che verrà",
+        "description": "Creiamo basi digitali flessibili, capaci di evolversi insieme alla crescita delle aziende."
+      }
+    },
+    "perspectiveLabel": "IL NOSTRO APPROCCIO INTEGRATO",
+    "perspectiveTitle": "Un'unica visione condivisa.",
+    "perspectiveDescription": "Sviluppo web, design UI/UX, automazione con IA, marketing digitale e consulenza IT funzionano meglio quando sostengono lo stesso obiettivo aziendale. Vista integra queste competenze per creare soluzioni coerenti, mirate e adatte alle esigenze reali.",
+    "closingTitle": "Il prossimo capitolo inizia con una conversazione.",
+    "closingDescription": "Hai una sfida che vale la pena affrontare? Scopriamo insieme cosa possiamo costruire.",
+    "cta": "Parliamone"
   }
 }

@@ -161,5 +161,32 @@
     },
     "closing": "Good work isn't a mystery. You know what happens next.",
     "cta": "Have a project in mind? Let's talk."
+  },
+  "About": {
+    "eyebrow": "ABOUT VISTA",
+    "title": "Technology is the tool. Progress is the purpose.",
+    "description": "Vista brings strategy, design, engineering, and AI together to help businesses solve meaningful problems, create better digital experiences, and move forward with clarity.",
+    "philosophyLabel": "OUR PHILOSOPHY",
+    "philosophyTitle": "Built around what matters.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Think before building",
+        "description": "We start by understanding the problem, the people, and the business goals before deciding what to build."
+      },
+      "makeComplexityUseful": {
+        "title": "Make complexity useful",
+        "description": "We turn complex technology into clear, accessible experiences that make everyday work and decisions easier."
+      },
+      "designForWhatComesNext": {
+        "title": "Design for what comes next",
+        "description": "We build with adaptability in mind, creating digital foundations that can evolve as businesses grow."
+      }
+    },
+    "perspectiveLabel": "HOW WE CONNECT THE DOTS",
+    "perspectiveTitle": "One connected perspective.",
+    "perspectiveDescription": "Web development, UI/UX design, AI automation, digital marketing, and IT consulting work best when they support the same business objective. Vista brings these disciplines together to create solutions that are purposeful, coherent, and built for real-world needs.",
+    "closingTitle": "Your next chapter starts with a conversation.",
+    "closingDescription": "Have a challenge worth solving? Let's explore what we can build together.",
+    "cta": "Let's talk"
   }
 }
