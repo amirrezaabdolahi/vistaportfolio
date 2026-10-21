@@ -114,5 +114,52 @@
     },
     "closing": "¿Tienes un reto que merezca la pena resolver?",
     "cta": "Hablemos"
+  },
+  "OurProcess": {
+    "eyebrow": "06 / NUESTRO PROCESO",
+    "supportingLabel": "DE LA IDEA AL LANZAMIENTO",
+    "title": "Un proceso claro. Mejores resultados.",
+    "description": "Todo producto digital exitoso comienza con las preguntas adecuadas, toma forma mediante un diseño cuidadoso y aporta valor gracias a una ejecución rigurosa.",
+    "stageLabel": "FASE",
+    "stages": {
+      "discover": {
+        "title": "Descubrimiento",
+        "description": "Analizamos tus objetivos, audiencia, retos y oportunidades antes de decidir qué construir.",
+        "details": [
+          "Comprender los objetivos del negocio.",
+          "Identificar las necesidades de los usuarios y los requisitos del proyecto.",
+          "Definir el problema y los criterios de éxito."
+        ]
+      },
+      "strategizeDesign": {
+        "title": "Estrategia y diseño",
+        "description": "Definimos el enfoque, trazamos la experiencia y establecemos una dirección clara antes de comenzar el desarrollo.",
+        "details": [
+          "Establecer la estrategia del proyecto.",
+          "Diseñar los recorridos de usuario y la arquitectura de la información.",
+          "Definir la dirección visual y el enfoque técnico."
+        ]
+      },
+      "buildValidate": {
+        "title": "Desarrollo y validación",
+        "description": "Desarrollamos, integramos y perfeccionamos la solución prestando atención al rendimiento, la calidad y la usabilidad.",
+        "details": [
+          "Implementar la solución acordada.",
+          "Integrar los servicios y sistemas necesarios.",
+          "Probar funcionalidad, accesibilidad y rendimiento."
+        ]
+      },
+      "launchImprove": {
+        "title": "Lanzamiento y mejora",
+        "description": "Probamos, publicamos y medimos los resultados, e identificamos oportunidades de mejora a medida que crece tu negocio.",
+        "details": [
+          "Preparar y verificar la publicación.",
+          "Desplegar la solución.",
+          "Identificar oportunidades de optimización futura."
+        ]
+      }
+    },
+    "closing": "El buen trabajo no es un misterio. Sabes qué viene después.",
+    "cta": "¿Tienes un proyecto en mente? Hablemos."
   }
 }

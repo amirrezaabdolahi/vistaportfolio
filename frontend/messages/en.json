@@ -114,5 +114,52 @@
     },
     "closing": "Have a challenge worth solving?",
     "cta": "Let's talk"
+  },
+  "OurProcess": {
+    "eyebrow": "06 / OUR PROCESS",
+    "supportingLabel": "FROM IDEA TO LAUNCH",
+    "title": "A clear process. Better outcomes.",
+    "description": "Every successful digital product starts with the right questions, takes shape through thoughtful design, and becomes valuable through careful execution.",
+    "stageLabel": "STAGE",
+    "stages": {
+      "discover": {
+        "title": "Discover",
+        "description": "We explore your goals, audience, challenges, and opportunities before deciding what to build.",
+        "details": [
+          "Understand business objectives.",
+          "Identify user needs and project requirements.",
+          "Define the problem and success criteria."
+        ]
+      },
+      "strategizeDesign": {
+        "title": "Strategize & Design",
+        "description": "We define the approach, map the experience, and create a clear direction before development begins.",
+        "details": [
+          "Establish the project strategy.",
+          "Map user journeys and information architecture.",
+          "Define the visual direction and technical approach."
+        ]
+      },
+      "buildValidate": {
+        "title": "Build & Validate",
+        "description": "We develop, integrate, and refine the solution with attention to performance, quality, and usability.",
+        "details": [
+          "Implement the agreed solution.",
+          "Integrate the required services and systems.",
+          "Test functionality, accessibility, and performance."
+        ]
+      },
+      "launchImprove": {
+        "title": "Launch & Improve",
+        "description": "We test, deploy, measure results, and identify opportunities to improve as your business grows.",
+        "details": [
+          "Prepare and verify the release.",
+          "Deploy the solution.",
+          "Identify opportunities for future optimization."
+        ]
+      }
+    },
+    "closing": "Good work isn't a mystery. You know what happens next.",
+    "cta": "Have a project in mind? Let's talk."
   }
 }
