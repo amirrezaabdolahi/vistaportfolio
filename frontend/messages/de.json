@@ -89,5 +89,30 @@
       "description": "Machen wir aus Ihrer nächsten Idee etwas Bedeutungsvolles.",
       "label": "Kontakt aufnehmen"
     }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "WARUM VISTA",
+    "title": "Mehr als digitale Lösungen. Echter Fortschritt.",
+    "description": "Wir verbinden durchdachtes Design, zuverlässiges Engineering und intelligente Automatisierung, damit Unternehmen vorankommen.",
+    "reasons": {
+      "strategy": {
+        "title": "Strategie vor Umsetzung",
+        "description": "Wir verstehen zuerst die geschäftliche Herausforderung und entwickeln dann die passende Lösung, statt Technologie um ihrer selbst willen einzusetzen."
+      },
+      "designEngineering": {
+        "title": "Design trifft Engineering",
+        "description": "Jedes Erlebnis soll hochwertig aussehen, intuitiv funktionieren und auf verschiedenen Geräten zuverlässig bleiben."
+      },
+      "purposefulAI": {
+        "title": "KI mit einem klaren Zweck",
+        "description": "Wir setzen KI und Automatisierung dort ein, wo sie Routinearbeit reduzieren, Abläufe verbessern oder messbaren Mehrwert schaffen."
+      },
+      "growth": {
+        "title": "Für Wachstum entwickelt",
+        "description": "Leistung, Wartbarkeit und zukünftiges Wachstum berücksichtigen wir von Anfang an – nicht erst im Nachhinein."
+      }
+    },
+    "closing": "Sie haben eine Herausforderung, die es zu lösen lohnt?",
+    "cta": "Sprechen wir darüber"
   }
 }
