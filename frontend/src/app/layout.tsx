@@ -96,7 +96,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className="flex min-h-full flex-col"
   
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

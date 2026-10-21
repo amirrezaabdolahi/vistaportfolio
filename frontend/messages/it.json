@@ -161,5 +161,71 @@
     },
     "closing": "Il buon lavoro non è un mistero. Sai cosa succede dopo.",
     "cta": "Hai un progetto in mente? Parliamone."
+  },
+  "About": {
+    "eyebrow": "CHI È VISTA",
+    "title": "La tecnologia è lo strumento. Il progresso è lo scopo.",
+    "description": "Vista unisce strategia, design, ingegneria e IA per aiutare le aziende a risolvere problemi significativi, creare esperienze digitali migliori e avanzare con chiarezza.",
+    "philosophyLabel": "LA NOSTRA FILOSOFIA",
+    "philosophyTitle": "Partiamo da ciò che conta davvero.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Pensare prima di costruire",
+        "description": "Prima di decidere cosa realizzare, comprendiamo il problema, le persone coinvolte e gli obiettivi aziendali."
+      },
+      "makeComplexityUseful": {
+        "title": "Rendere utile la complessità",
+        "description": "Trasformiamo tecnologie complesse in esperienze chiare e accessibili, semplificando il lavoro quotidiano e le decisioni."
+      },
+      "designForWhatComesNext": {
+        "title": "Progettare per ciò che verrà",
+        "description": "Creiamo basi digitali flessibili, capaci di evolversi insieme alla crescita delle aziende."
+      }
+    },
+    "perspectiveLabel": "IL NOSTRO APPROCCIO INTEGRATO",
+    "perspectiveTitle": "Un'unica visione condivisa.",
+    "perspectiveDescription": "Sviluppo web, design UI/UX, automazione con IA, marketing digitale e consulenza IT funzionano meglio quando sostengono lo stesso obiettivo aziendale. Vista integra queste competenze per creare soluzioni coerenti, mirate e adatte alle esigenze reali.",
+    "closingTitle": "Il prossimo capitolo inizia con una conversazione.",
+    "closingDescription": "Hai una sfida che vale la pena affrontare? Scopriamo insieme cosa possiamo costruire.",
+    "cta": "Parliamone"
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "Domande utili. Risposte chiare.",
+    "description": "Scegliere il partner digitale giusto significa prima capire come lavora. Ecco alcune informazioni utili prima di iniziare.",
+    "contactPrompt": "Hai ancora una domanda?",
+    "contactDescription": "Parliamo di ciò che vorresti realizzare.",
+    "contactCta": "Parliamone",
+    "toggleQuestion": "Mostra o nascondi la risposta: {question}",
+    "questions": {
+      "services": {
+        "question": "Quali servizi offre Vista?",
+        "answer": "Vista riunisce sviluppo web, design UI/UX, intelligenza artificiale e automazione, SEO e marketing digitale, e consulenza IT. La combinazione più adatta dipende dai tuoi obiettivi e dalle sfide che vuoi affrontare."
+      },
+      "clients": {
+        "question": "Con chi lavora Vista?",
+        "answer": "Vista collabora con aziende che vogliono migliorare la propria presenza digitale, rendere più efficienti le operazioni o sviluppare nuovi prodotti digitali. Il punto di partenza migliore è capire esigenze e obiettivi."
+      },
+      "process": {
+        "question": "Come inizia di solito un progetto?",
+        "answer": "Iniziamo parlando dei tuoi obiettivi, del pubblico, dei vincoli e delle priorità. Poi definiamo l'ambito del progetto e una direzione concreta prima di passare a design e sviluppo."
+      },
+      "singleService": {
+        "question": "Posso affidarmi a Vista per un solo servizio?",
+        "answer": "Sì. Un progetto può concentrarsi su un'esigenza specifica, come un sito web, un miglioramento UX o un flusso automatizzato. Possiamo anche combinare più servizi quando porta a un risultato migliore."
+      },
+      "timeline": {
+        "question": "Quanto tempo richiede un progetto?",
+        "answer": "I tempi dipendono dall'ambito, dalla complessità, dai requisiti e dal processo di feedback. Dopo aver compreso le tue esigenze, possiamo definire tappe realistiche e una stima dei tempi."
+      },
+      "pricing": {
+        "question": "Quanto costa un progetto?",
+        "answer": "Il costo dipende dai risultati da realizzare, dalla complessità e dal livello di supporto necessario. Una volta chiarito l'ambito, possiamo discutere l'approccio e il budget più adatti."
+      },
+      "earlyIdea": {
+        "question": "E se avessi solo un'idea, senza un piano dettagliato?",
+        "answer": "È un punto di partenza assolutamente valido. Possiamo parlare del problema da risolvere, esplorare possibili approcci e individuare i prossimi passi più utili prima di impegnarci in un progetto più ampio."
+      }
+    }
   }
 }

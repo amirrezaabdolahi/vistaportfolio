@@ -161,5 +161,71 @@
     },
     "closing": "Good work isn't a mystery. You know what happens next.",
     "cta": "Have a project in mind? Let's talk."
+  },
+  "About": {
+    "eyebrow": "ABOUT VISTA",
+    "title": "Technology is the tool. Progress is the purpose.",
+    "description": "Vista brings strategy, design, engineering, and AI together to help businesses solve meaningful problems, create better digital experiences, and move forward with clarity.",
+    "philosophyLabel": "OUR PHILOSOPHY",
+    "philosophyTitle": "Built around what matters.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Think before building",
+        "description": "We start by understanding the problem, the people, and the business goals before deciding what to build."
+      },
+      "makeComplexityUseful": {
+        "title": "Make complexity useful",
+        "description": "We turn complex technology into clear, accessible experiences that make everyday work and decisions easier."
+      },
+      "designForWhatComesNext": {
+        "title": "Design for what comes next",
+        "description": "We build with adaptability in mind, creating digital foundations that can evolve as businesses grow."
+      }
+    },
+    "perspectiveLabel": "HOW WE CONNECT THE DOTS",
+    "perspectiveTitle": "One connected perspective.",
+    "perspectiveDescription": "Web development, UI/UX design, AI automation, digital marketing, and IT consulting work best when they support the same business objective. Vista brings these disciplines together to create solutions that are purposeful, coherent, and built for real-world needs.",
+    "closingTitle": "Your next chapter starts with a conversation.",
+    "closingDescription": "Have a challenge worth solving? Let's explore what we can build together.",
+    "cta": "Let's talk"
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "Good questions. Clear answers.",
+    "description": "Choosing the right digital partner starts with understanding how they work. Here are a few things worth knowing before we begin.",
+    "contactPrompt": "Still have a question?",
+    "contactDescription": "Let's discuss what you're looking to build.",
+    "contactCta": "Let's talk",
+    "toggleQuestion": "Toggle answer: {question}",
+    "questions": {
+      "services": {
+        "question": "What services does Vista offer?",
+        "answer": "Vista brings together web development, UI/UX design, AI and automation, SEO and digital marketing, and IT consulting. The right combination depends on your goals and the challenges you're trying to solve."
+      },
+      "clients": {
+        "question": "Who does Vista work with?",
+        "answer": "Vista works with businesses looking to improve their digital presence, streamline operations, or develop new digital products. The best starting point is understanding your needs and objectives."
+      },
+      "process": {
+        "question": "How does a project usually begin?",
+        "answer": "We start with a conversation about your goals, audience, constraints, and priorities. From there, we define the scope and a practical direction before moving into design and development."
+      },
+      "singleService": {
+        "question": "Can I work with Vista on just one service?",
+        "answer": "Yes. A project can focus on a specific need, such as a website, a UX improvement, or an automation workflow. We can also combine services when that creates a better outcome."
+      },
+      "timeline": {
+        "question": "How long does a project take?",
+        "answer": "Timelines depend on the project's scope, complexity, requirements, and feedback process. After understanding your needs, we can outline realistic milestones and an estimated timeline."
+      },
+      "pricing": {
+        "question": "How much does a project cost?",
+        "answer": "Pricing depends on what needs to be delivered, the complexity involved, and the level of support required. Once the scope is clear, we can discuss an appropriate approach and budget."
+      },
+      "earlyIdea": {
+        "question": "What if I only have an idea, not a detailed plan?",
+        "answer": "That's a perfectly reasonable place to start. We can discuss the problem you're trying to solve, explore possible approaches, and identify the most useful next steps before committing to a larger project."
+      }
+    }
   }
 }

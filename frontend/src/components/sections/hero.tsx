@@ -69,7 +69,7 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[560px] lg:ms-auto">
-          <div className="relative aspect-[0.92/1] overflow-hidden rounded-[2rem] border border-black/[0.06] bg-[#F7F7F5] p-5 sm:p-8">
+          <div className="relative aspect-[0.92/1] overflow-hidden rounded-[2rem] border border-black/[0.06]  p-5 sm:p-8">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(255,255,255,1),rgba(247,247,245,0.1)_65%)]" />
 
             <div className="relative flex h-full flex-col justify-between">

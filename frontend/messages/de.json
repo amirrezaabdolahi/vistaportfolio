@@ -161,5 +161,71 @@
     },
     "closing": "Gute Arbeit ist kein Rätsel. Sie wissen, was als Nächstes passiert.",
     "cta": "Sie planen ein Projekt? Sprechen wir darüber."
+  },
+  "About": {
+    "eyebrow": "ÜBER VISTA",
+    "title": "Technologie ist das Werkzeug. Fortschritt ist das Ziel.",
+    "description": "Vista verbindet Strategie, Design, Engineering und KI, um Unternehmen dabei zu helfen, relevante Probleme zu lösen, bessere digitale Erlebnisse zu schaffen und klar voranzukommen.",
+    "philosophyLabel": "UNSERE PHILOSOPHIE",
+    "philosophyTitle": "Was wirklich zählt, steht im Mittelpunkt.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Erst verstehen, dann entwickeln",
+        "description": "Bevor wir entscheiden, was wir bauen, verstehen wir das Problem, die Menschen und die geschäftlichen Ziele."
+      },
+      "makeComplexityUseful": {
+        "title": "Komplexität sinnvoll nutzbar machen",
+        "description": "Wir verwandeln komplexe Technologie in klare, zugängliche Erlebnisse, die den Arbeitsalltag und Entscheidungen erleichtern."
+      },
+      "designForWhatComesNext": {
+        "title": "Für den nächsten Schritt gestalten",
+        "description": "Wir schaffen anpassungsfähige digitale Grundlagen, die sich mit dem Wachstum eines Unternehmens weiterentwickeln können."
+      }
+    },
+    "perspectiveLabel": "WIE WIR ZUSAMMENARBEITEN",
+    "perspectiveTitle": "Eine gemeinsame Perspektive.",
+    "perspectiveDescription": "Webentwicklung, UI/UX-Design, KI-Automatisierung, digitales Marketing und IT-Beratung entfalten ihre Wirkung am besten, wenn sie dasselbe Geschäftsziel unterstützen. Vista verbindet diese Disziplinen zu durchdachten, stimmigen Lösungen für reale Anforderungen.",
+    "closingTitle": "Das nächste Kapitel beginnt mit einem Gespräch.",
+    "closingDescription": "Sie haben eine Herausforderung, die es zu lösen lohnt? Lassen Sie uns gemeinsam herausfinden, was wir entwickeln können.",
+    "cta": "Sprechen wir darüber"
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "Gute Fragen. Klare Antworten.",
+    "description": "Die Wahl des richtigen digitalen Partners beginnt damit, seine Arbeitsweise zu verstehen. Hier finden Sie einige hilfreiche Informationen für den Einstieg.",
+    "contactPrompt": "Noch eine Frage?",
+    "contactDescription": "Lassen Sie uns darüber sprechen, was Sie entwickeln möchten.",
+    "contactCta": "Sprechen wir",
+    "toggleQuestion": "Antwort ein- oder ausblenden: {question}",
+    "questions": {
+      "services": {
+        "question": "Welche Leistungen bietet Vista an?",
+        "answer": "Vista vereint Webentwicklung, UI/UX-Design, KI und Automatisierung, SEO und digitales Marketing sowie IT-Beratung. Welche Kombination sinnvoll ist, hängt von Ihren Zielen und den Herausforderungen ab, die Sie lösen möchten."
+      },
+      "clients": {
+        "question": "Mit wem arbeitet Vista zusammen?",
+        "answer": "Vista arbeitet mit Unternehmen, die ihre digitale Präsenz verbessern, Abläufe effizienter gestalten oder neue digitale Produkte entwickeln möchten. Am besten beginnen wir damit, Ihre Bedürfnisse und Ziele zu verstehen."
+      },
+      "process": {
+        "question": "Wie beginnt ein Projekt normalerweise?",
+        "answer": "Wir beginnen mit einem Gespräch über Ihre Ziele, Zielgruppe, Rahmenbedingungen und Prioritäten. Anschließend legen wir den Projektumfang und eine praktikable Richtung fest, bevor Design und Entwicklung starten."
+      },
+      "singleService": {
+        "question": "Kann ich Vista auch nur für eine einzelne Leistung beauftragen?",
+        "answer": "Ja. Ein Projekt kann sich auf einen konkreten Bedarf konzentrieren, etwa eine Website, eine UX-Verbesserung oder einen automatisierten Arbeitsablauf. Wenn es bessere Ergebnisse ermöglicht, kombinieren wir auch mehrere Leistungen."
+      },
+      "timeline": {
+        "question": "Wie lange dauert ein Projekt?",
+        "answer": "Der Zeitrahmen hängt von Umfang, Komplexität, Anforderungen und Feedbackprozess ab. Sobald wir Ihren Bedarf verstanden haben, können wir realistische Meilensteine und einen voraussichtlichen Zeitplan skizzieren."
+      },
+      "pricing": {
+        "question": "Was kostet ein Projekt?",
+        "answer": "Die Kosten richten sich nach den gewünschten Ergebnissen, der Komplexität und dem benötigten Support. Sobald der Umfang feststeht, können wir über einen passenden Ansatz und das Budget sprechen."
+      },
+      "earlyIdea": {
+        "question": "Was, wenn ich bisher nur eine Idee und keinen konkreten Plan habe?",
+        "answer": "Das ist ein völlig guter Ausgangspunkt. Wir können das Problem besprechen, das Sie lösen möchten, mögliche Ansätze erkunden und die sinnvollsten nächsten Schritte bestimmen, bevor Sie sich auf ein größeres Projekt festlegen."
+      }
+    }
   }
 }

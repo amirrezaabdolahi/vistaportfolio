@@ -161,5 +161,71 @@
     },
     "closing": "El buen trabajo no es un misterio. Sabes qué viene después.",
     "cta": "¿Tienes un proyecto en mente? Hablemos."
+  },
+  "About": {
+    "eyebrow": "SOBRE VISTA",
+    "title": "La tecnología es la herramienta. El progreso es el propósito.",
+    "description": "Vista reúne estrategia, diseño, ingeniería e IA para ayudar a las empresas a resolver problemas importantes, crear mejores experiencias digitales y avanzar con claridad.",
+    "philosophyLabel": "NUESTRA FILOSOFÍA",
+    "philosophyTitle": "Todo gira en torno a lo que importa.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Pensar antes de construir",
+        "description": "Antes de decidir qué crear, entendemos el problema, a las personas y los objetivos del negocio."
+      },
+      "makeComplexityUseful": {
+        "title": "Convertir la complejidad en algo útil",
+        "description": "Transformamos tecnologías complejas en experiencias claras y accesibles que facilitan el trabajo diario y la toma de decisiones."
+      },
+      "designForWhatComesNext": {
+        "title": "Diseñar pensando en lo que viene",
+        "description": "Creamos bases digitales adaptables que pueden evolucionar a medida que crecen las empresas."
+      }
+    },
+    "perspectiveLabel": "UNA VISIÓN INTEGRADA",
+    "perspectiveTitle": "Una perspectiva conectada.",
+    "perspectiveDescription": "El desarrollo web, el diseño UI/UX, la automatización con IA, el marketing digital y la consultoría de TI funcionan mejor cuando responden al mismo objetivo empresarial. Vista conecta estas disciplinas para crear soluciones coherentes, útiles y pensadas para necesidades reales.",
+    "closingTitle": "Tu próxima etapa empieza con una conversación.",
+    "closingDescription": "¿Tienes un reto que merece la pena resolver? Exploremos lo que podemos construir juntos.",
+    "cta": "Hablemos"
+  },
+  "FAQ": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Buenas preguntas. Respuestas claras.",
+    "description": "Elegir al socio digital adecuado empieza por entender cómo trabaja. Aquí tienes algunos puntos importantes antes de empezar.",
+    "contactPrompt": "¿Te queda alguna pregunta?",
+    "contactDescription": "Hablemos de lo que quieres crear.",
+    "contactCta": "Hablemos",
+    "toggleQuestion": "Mostrar u ocultar la respuesta: {question}",
+    "questions": {
+      "services": {
+        "question": "¿Qué servicios ofrece Vista?",
+        "answer": "Vista reúne desarrollo web, diseño UI/UX, inteligencia artificial y automatización, SEO y marketing digital, y consultoría de TI. La combinación adecuada depende de tus objetivos y de los retos que quieras resolver."
+      },
+      "clients": {
+        "question": "¿Con qué tipo de clientes trabaja Vista?",
+        "answer": "Vista trabaja con empresas que quieren mejorar su presencia digital, optimizar sus operaciones o desarrollar nuevos productos digitales. El mejor punto de partida es comprender tus necesidades y objetivos."
+      },
+      "process": {
+        "question": "¿Cómo suele comenzar un proyecto?",
+        "answer": "Empezamos conversando sobre tus objetivos, tu público, las limitaciones y las prioridades. Después definimos el alcance y una dirección práctica antes de pasar al diseño y al desarrollo."
+      },
+      "singleService": {
+        "question": "¿Puedo contratar a Vista para un solo servicio?",
+        "answer": "Sí. Un proyecto puede centrarse en una necesidad concreta, como una web, una mejora de UX o un flujo de automatización. También podemos combinar servicios cuando eso permite obtener un mejor resultado."
+      },
+      "timeline": {
+        "question": "¿Cuánto tarda un proyecto?",
+        "answer": "Los plazos dependen del alcance, la complejidad, los requisitos y el proceso de comentarios. Cuando entendamos tus necesidades, podremos proponer hitos realistas y un plazo estimado."
+      },
+      "pricing": {
+        "question": "¿Cuánto cuesta un proyecto?",
+        "answer": "El precio depende de lo que haya que entregar, la complejidad y el nivel de soporte necesario. Una vez definido el alcance, podemos hablar de un enfoque y un presupuesto adecuados."
+      },
+      "earlyIdea": {
+        "question": "¿Y si solo tengo una idea, pero no un plan detallado?",
+        "answer": "Es un punto de partida perfectamente válido. Podemos hablar del problema que quieres resolver, explorar posibles enfoques e identificar los siguientes pasos más útiles antes de comprometernos con un proyecto mayor."
+      }
+    }
   }
 }

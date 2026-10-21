@@ -1,129 +1,123 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useReducedMotion, useScroll } from "framer-motion";
+import { useLenis } from "lenis/react";
 
-const VIDEO_SRC = "/hero_background_video.webm";
+const VIDEO_SRC = "/hero_background_video_optimized.webm";
+
+// Add a first-frame image in /public if you want a fallback poster.
+const POSTER_SRC: string | undefined = undefined;
+
+const END_GUARD = 0.001;
+const MIN_DELTA = 1 / 48;
 const SEEK_EPSILON = 0.04;
-const END_FRAME_GUARD = 0.05;
+
+const clamp01 = (value: number) =>
+  Number.isFinite(value) ? Math.min(1, Math.max(0, value)) : 0;
+
+const getNativeProgress = () => {
+  const limit = document.documentElement.scrollHeight - window.innerHeight;
+  return limit > 0 ? clamp01(window.scrollY / limit) : 0;
+};
 
 export function ScrollVideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const reduceMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll();
+  const lenis = useLenis();
 
   useEffect(() => {
     const video = videoRef.current;
 
-    if (!video) {
-      return;
-    }
+    if (!video) return;
 
     const mobileQuery = window.matchMedia("(max-width: 767px)");
-    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const reducedMotionQuery = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
 
-    let frameRequest: number | null = null;
-    let latestProgress = scrollYProgress.get();
-    let metadataReady = false;
-    let sourceAttached = false;
+    const readProgress = () =>
+      lenis ? clamp01(lenis.progress) : getNativeProgress();
+
+    let progress = readProgress();
+    let ready = false;
+    let failed = false;
+    let attached = false;
     let seekInFlight = false;
 
-    const getTargetTime = () => {
-      const lastSeekableTime = Math.max(0, video.duration - END_FRAME_GUARD);
+    const isDisabled = () =>
+      mobileQuery.matches || reducedMotionQuery.matches;
 
-      return Math.min(
-        lastSeekableTime,
-        Math.max(0, latestProgress * video.duration),
+    const sync = () => {
+      if (!ready || failed || seekInFlight || video.seeking) return;
+
+      const duration = video.duration;
+
+      if (!Number.isFinite(duration) || duration <= 0) return;
+
+      const target = Math.min(
+        Math.max(0, duration - END_GUARD),
+        Math.max(0, progress * duration),
       );
-    };
 
-    const seekToScrollPosition = () => {
-      frameRequest = null;
+      if (Math.abs(video.currentTime - target) < MIN_DELTA) return;
 
-      if (
-        !metadataReady ||
-        video.readyState < HTMLMediaElement.HAVE_METADATA ||
-        !Number.isFinite(video.duration) ||
-        video.duration <= 0 ||
-        seekInFlight ||
-        video.seeking
-      ) {
-        return;
-      }
-
-      const targetTime = getTargetTime();
-
-      if (
-        Number.isFinite(video.currentTime) &&
-        Math.abs(video.currentTime - targetTime) < SEEK_EPSILON
-      ) {
-        return;
-      }
-
-      // Keep at most one seek in flight. Scroll updates only replace
-      // latestProgress; after this seek completes, we jump to the newest target.
       seekInFlight = true;
 
       try {
-        video.currentTime = targetTime;
+        video.currentTime = target;
       } catch {
         seekInFlight = false;
-        // The next scroll update or media event can safely retry.
       }
     };
 
-    const scheduleSeek = (progress: number) => {
-      latestProgress = Math.min(1, Math.max(0, progress));
+    const update = () => {
+      progress = readProgress();
+      sync();
+    };
 
-      if (frameRequest === null) {
-        frameRequest = window.requestAnimationFrame(seekToScrollPosition);
-      }
+    const handleMetadata = () => {
+      ready =
+        video.readyState >= HTMLMediaElement.HAVE_METADATA &&
+        Number.isFinite(video.duration) &&
+        video.duration > 0;
+
+      if (ready) update();
     };
 
     const handleSeeked = () => {
       seekInFlight = false;
 
-      if (metadataReady) {
-        const targetTime = getTargetTime();
+      if (!ready || failed) return;
 
-        if (
-          Number.isFinite(video.currentTime) &&
-          Math.abs(video.currentTime - targetTime) >= SEEK_EPSILON
-        ) {
-          scheduleSeek(latestProgress);
-        }
-      }
-    };
+      const duration = video.duration;
 
-    const handleMetadata = () => {
-      metadataReady =
-        video.readyState >= HTMLMediaElement.HAVE_METADATA &&
-        Number.isFinite(video.duration) &&
-        video.duration > 0;
+      if (!Number.isFinite(duration) || duration <= 0) return;
 
-      if (metadataReady) {
-        scheduleSeek(scrollYProgress.get());
-      }
-    };
+      const target = Math.min(
+        Math.max(0, duration - END_GUARD),
+        Math.max(0, progress * duration),
+      );
 
-    const handleMediaError = () => {
-      video.dataset.error = "true";
-      metadataReady = false;
-      seekInFlight = false;
-    };
-
-    const attachSource = () => {
       if (
-        reduceMotion ||
-        mobileQuery.matches ||
-        reducedMotionQuery.matches ||
-        sourceAttached
+        Number.isFinite(video.currentTime) &&
+        Math.abs(video.currentTime - target) >= SEEK_EPSILON
       ) {
-        return;
+        sync();
       }
+    };
 
-      sourceAttached = true;
+    const handleError = () => {
+      failed = true;
+      ready = false;
+      seekInFlight = false;
+      video.dataset.error = "true";
+    };
+
+    const attach = () => {
+      if (isDisabled() || attached || failed) return;
+
+      attached = true;
       delete video.dataset.error;
+
       video.preload = "auto";
       video.src = VIDEO_SRC;
       video.load();
@@ -133,75 +127,91 @@ export function ScrollVideoBackground() {
       }
     };
 
-    const detachSource = () => {
-      if (!sourceAttached) {
-        return;
-      }
+    const detach = () => {
+      if (!attached) return;
 
-      sourceAttached = false;
-      metadataReady = false;
+      attached = false;
+      ready = false;
       seekInFlight = false;
+
       video.pause();
       video.removeAttribute("src");
       video.load();
     };
 
     const handleEnvironmentChange = () => {
-      if (reduceMotion || mobileQuery.matches || reducedMotionQuery.matches) {
-        detachSource();
+      if (isDisabled()) {
+        detach();
       } else {
-        attachSource();
+        attach();
       }
     };
+
+    const resizeObserver =
+      typeof ResizeObserver !== "undefined"
+        ? new ResizeObserver(update)
+        : null;
+
+    resizeObserver?.observe(document.documentElement);
 
     video.addEventListener("loadedmetadata", handleMetadata);
     video.addEventListener("durationchange", handleMetadata);
     video.addEventListener("seeked", handleSeeked);
-    video.addEventListener("error", handleMediaError);
+    video.addEventListener("error", handleError);
 
-    const unsubscribeScroll = scrollYProgress.on("change", scheduleSeek);
+    if (lenis) {
+      lenis.on("scroll", update);
+    } else {
+      window.addEventListener("scroll", update, { passive: true });
+    }
 
     mobileQuery.addEventListener("change", handleEnvironmentChange);
     reducedMotionQuery.addEventListener("change", handleEnvironmentChange);
 
     handleEnvironmentChange();
-    scheduleSeek(scrollYProgress.get());
 
     return () => {
-      unsubscribeScroll();
+      if (lenis) {
+        lenis.off("scroll", update);
+      } else {
+        window.removeEventListener("scroll", update);
+      }
+
+      resizeObserver?.disconnect();
+
       mobileQuery.removeEventListener("change", handleEnvironmentChange);
-      reducedMotionQuery.removeEventListener("change", handleEnvironmentChange);
+      reducedMotionQuery.removeEventListener(
+        "change",
+        handleEnvironmentChange,
+      );
+
       video.removeEventListener("loadedmetadata", handleMetadata);
       video.removeEventListener("durationchange", handleMetadata);
       video.removeEventListener("seeked", handleSeeked);
-      video.removeEventListener("error", handleMediaError);
+      video.removeEventListener("error", handleError);
 
-      if (frameRequest !== null) {
-        window.cancelAnimationFrame(frameRequest);
-      }
-
-      detachSource();
+      detach();
     };
-  }, [reduceMotion, scrollYProgress]);
+  }, [lenis]);
 
   return (
     <div
       aria-hidden="true"
       className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-slate-50"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_30%,rgba(15,23,42,0.07),transparent_48%)]" />
-
       <video
         ref={videoRef}
         muted
         playsInline
+        disablePictureInPicture
+        disableRemotePlayback
         preload="none"
+        poster={POSTER_SRC}
         tabIndex={-1}
         className="absolute inset-0 size-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-white/55" />
-      <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/45 to-white/65" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.31),rgba(255,255,255,0.42),rgba(255,255,255,0.56))]" />
     </div>
   );
 }
