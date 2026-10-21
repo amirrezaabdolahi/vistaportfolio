@@ -114,5 +114,52 @@
     },
     "closing": "Hai una sfida che vale la pena risolvere?",
     "cta": "Parliamone"
+  },
+  "OurProcess": {
+    "eyebrow": "06 / IL NOSTRO PROCESSO",
+    "supportingLabel": "DALL'IDEA AL LANCIO",
+    "title": "Un processo chiaro. Risultati migliori.",
+    "description": "Ogni prodotto digitale di successo nasce dalle domande giuste, prende forma attraverso un design attento e crea valore grazie a un'esecuzione accurata.",
+    "stageLabel": "FASE",
+    "stages": {
+      "discover": {
+        "title": "Scoperta",
+        "description": "Esploriamo obiettivi, pubblico, sfide e opportunità prima di decidere cosa realizzare.",
+        "details": [
+          "Comprendere gli obiettivi aziendali.",
+          "Individuare esigenze degli utenti e requisiti del progetto.",
+          "Definire il problema e i criteri di successo."
+        ]
+      },
+      "strategizeDesign": {
+        "title": "Strategia e design",
+        "description": "Definiamo l'approccio, progettiamo l'esperienza e stabiliamo una direzione chiara prima di iniziare lo sviluppo.",
+        "details": [
+          "Definire la strategia del progetto.",
+          "Mappare i percorsi utente e l'architettura delle informazioni.",
+          "Stabilire la direzione visiva e l'approccio tecnico."
+        ]
+      },
+      "buildValidate": {
+        "title": "Sviluppo e verifica",
+        "description": "Sviluppiamo, integriamo e perfezioniamo la soluzione prestando attenzione a prestazioni, qualità e usabilità.",
+        "details": [
+          "Realizzare la soluzione concordata.",
+          "Integrare i servizi e i sistemi necessari.",
+          "Verificare funzionalità, accessibilità e prestazioni."
+        ]
+      },
+      "launchImprove": {
+        "title": "Lancio e miglioramento",
+        "description": "Testiamo, pubblichiamo e misuriamo i risultati, individuando nuove opportunità di miglioramento mentre l'attività cresce.",
+        "details": [
+          "Preparare e verificare il rilascio.",
+          "Distribuire la soluzione.",
+          "Individuare opportunità di ottimizzazione futura."
+        ]
+      }
+    },
+    "closing": "Il buon lavoro non è un mistero. Sai cosa succede dopo.",
+    "cta": "Hai un progetto in mente? Parliamone."
   }
 }
