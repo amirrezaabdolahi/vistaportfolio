@@ -27,7 +27,7 @@ export function WhyChooseUsSection() {
     <section
       id="about"
       aria-labelledby="why-vista-heading"
-      className="scroll-mt-24 overflow-hidden bg-neutral-50 py-24 sm:py-28 lg:py-32"
+      className="scroll-mt-24 overflow-hidden bg-neutral-50/75 py-24 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <motion.div

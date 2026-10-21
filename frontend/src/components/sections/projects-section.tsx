@@ -42,7 +42,7 @@ export function ProjectsSection() {
     <section
       id="work"
       aria-labelledby="projects-heading"
-      className="scroll-mt-24 bg-white py-24 sm:py-28 lg:py-32"
+      className="scroll-mt-24 bg-white/65 py-24 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end lg:gap-16">
