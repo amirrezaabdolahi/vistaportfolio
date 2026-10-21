@@ -92,7 +92,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         "font-sans",
       )}
     >
-      <body className="flex min-h-full flex-col">
+      <body
+        className="flex min-h-full flex-col"
+  
+      >
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
