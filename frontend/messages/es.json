@@ -89,5 +89,30 @@
       "description": "Convirtamos tu próxima idea en algo significativo.",
       "label": "Hablemos"
     }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "POR QUÉ VISTA",
+    "title": "No solo soluciones digitales. Progreso real.",
+    "description": "Combinamos diseño cuidadoso, ingeniería fiable y automatización inteligente para ayudar a las empresas a avanzar.",
+    "reasons": {
+      "strategy": {
+        "title": "Primero la estrategia, después la ejecución",
+        "description": "Primero comprendemos el reto empresarial y después creamos la solución adecuada, sin añadir tecnología porque sí."
+      },
+      "designEngineering": {
+        "title": "Diseño e ingeniería en conjunto",
+        "description": "Diseñamos cada experiencia para que tenga un acabado cuidado, sea intuitiva y funcione de forma fiable en distintos dispositivos."
+      },
+      "purposefulAI": {
+        "title": "IA con propósito",
+        "description": "Utilizamos IA y automatización cuando pueden reducir tareas repetitivas, mejorar flujos de trabajo o generar valor medible."
+      },
+      "growth": {
+        "title": "Preparado para crecer",
+        "description": "Tenemos en cuenta el rendimiento, la facilidad de mantenimiento y el crecimiento futuro desde el principio, no como algo secundario."
+      }
+    },
+    "closing": "¿Tienes un reto que merezca la pena resolver?",
+    "cta": "Hablemos"
   }
 }

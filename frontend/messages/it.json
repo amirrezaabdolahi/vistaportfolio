@@ -89,5 +89,30 @@
       "description": "Trasformiamo la tua prossima idea in qualcosa di significativo.",
       "label": "Parliamone"
     }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "PERCHÉ VISTA",
+    "title": "Non solo soluzioni digitali. Progresso concreto.",
+    "description": "Uniamo design attento, ingegneria affidabile e automazione intelligente per aiutare le aziende ad andare avanti.",
+    "reasons": {
+      "strategy": {
+        "title": "Prima la strategia, poi l'esecuzione",
+        "description": "Comprendiamo prima la sfida aziendale e poi costruiamo la soluzione giusta, senza aggiungere tecnologia fine a sé stessa."
+      },
+      "designEngineering": {
+        "title": "Design e ingegneria insieme",
+        "description": "Progettiamo ogni esperienza perché sia curata, intuitiva e affidabile su dispositivi diversi."
+      },
+      "purposefulAI": {
+        "title": "IA con uno scopo",
+        "description": "Usiamo IA e automazione dove possono ridurre le attività ripetitive, migliorare i processi o creare valore misurabile."
+      },
+      "growth": {
+        "title": "Progettato per crescere",
+        "description": "Consideriamo prestazioni, manutenibilità e crescita futura fin dall'inizio, non come aspetti secondari."
+      }
+    },
+    "closing": "Hai una sfida che vale la pena risolvere?",
+    "cta": "Parliamone"
   }
 }
