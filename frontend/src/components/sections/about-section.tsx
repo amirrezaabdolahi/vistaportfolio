@@ -18,7 +18,7 @@ export function AboutSection() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="scroll-mt-24 overflow-hidden border-y border-black/[0.04] bg-white/80 py-24 backdrop-blur-[2px] sm:py-28 lg:py-32"
+      className="scroll-mt-24 overflow-hidden border-y border-black/[0.04] bg-white/80 py-24 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         {/* Introduction */}
