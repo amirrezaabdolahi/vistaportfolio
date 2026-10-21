@@ -6,6 +6,7 @@ import { ProjectsSection } from "@/components/sections/projects-section";
 import { WhyChooseUsSection } from "@/components/sections/why-choose-us-section";
 import { OurProcessSection } from "@/components/sections/our-process-section";
 import { AboutSection } from "@/components/sections/about-section";
+import { FAQSection } from "@/components/sections/faq-section";
 
 export const instant = false;
 
@@ -22,6 +23,7 @@ export default function Home() {
           <WhyChooseUsSection />
           <OurProcessSection />
           <AboutSection />
+          <FAQSection />
         </main>
       </div>
     </>
