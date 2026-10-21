@@ -161,5 +161,32 @@
     },
     "closing": "Gute Arbeit ist kein Rätsel. Sie wissen, was als Nächstes passiert.",
     "cta": "Sie planen ein Projekt? Sprechen wir darüber."
+  },
+  "About": {
+    "eyebrow": "ÜBER VISTA",
+    "title": "Technologie ist das Werkzeug. Fortschritt ist das Ziel.",
+    "description": "Vista verbindet Strategie, Design, Engineering und KI, um Unternehmen dabei zu helfen, relevante Probleme zu lösen, bessere digitale Erlebnisse zu schaffen und klar voranzukommen.",
+    "philosophyLabel": "UNSERE PHILOSOPHIE",
+    "philosophyTitle": "Was wirklich zählt, steht im Mittelpunkt.",
+    "principles": {
+      "thinkBeforeBuilding": {
+        "title": "Erst verstehen, dann entwickeln",
+        "description": "Bevor wir entscheiden, was wir bauen, verstehen wir das Problem, die Menschen und die geschäftlichen Ziele."
+      },
+      "makeComplexityUseful": {
+        "title": "Komplexität sinnvoll nutzbar machen",
+        "description": "Wir verwandeln komplexe Technologie in klare, zugängliche Erlebnisse, die den Arbeitsalltag und Entscheidungen erleichtern."
+      },
+      "designForWhatComesNext": {
+        "title": "Für den nächsten Schritt gestalten",
+        "description": "Wir schaffen anpassungsfähige digitale Grundlagen, die sich mit dem Wachstum eines Unternehmens weiterentwickeln können."
+      }
+    },
+    "perspectiveLabel": "WIE WIR ZUSAMMENARBEITEN",
+    "perspectiveTitle": "Eine gemeinsame Perspektive.",
+    "perspectiveDescription": "Webentwicklung, UI/UX-Design, KI-Automatisierung, digitales Marketing und IT-Beratung entfalten ihre Wirkung am besten, wenn sie dasselbe Geschäftsziel unterstützen. Vista verbindet diese Disziplinen zu durchdachten, stimmigen Lösungen für reale Anforderungen.",
+    "closingTitle": "Das nächste Kapitel beginnt mit einem Gespräch.",
+    "closingDescription": "Sie haben eine Herausforderung, die es zu lösen lohnt? Lassen Sie uns gemeinsam herausfinden, was wir entwickeln können.",
+    "cta": "Sprechen wir darüber"
   }
 }
