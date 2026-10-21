@@ -114,5 +114,52 @@
     },
     "closing": "Sie haben eine Herausforderung, die es zu lösen lohnt?",
     "cta": "Sprechen wir darüber"
+  },
+  "OurProcess": {
+    "eyebrow": "06 / UNSER PROZESS",
+    "supportingLabel": "VON DER IDEE BIS ZUM LAUNCH",
+    "title": "Ein klarer Prozess. Bessere Ergebnisse.",
+    "description": "Jedes erfolgreiche digitale Produkt beginnt mit den richtigen Fragen, nimmt durch durchdachtes Design Gestalt an und schafft durch sorgfältige Umsetzung echten Mehrwert.",
+    "stageLabel": "PHASE",
+    "stages": {
+      "discover": {
+        "title": "Entdecken",
+        "description": "Bevor wir entscheiden, was wir entwickeln, untersuchen wir Ihre Ziele, Zielgruppe, Herausforderungen und Chancen.",
+        "details": [
+          "Geschäftsziele verstehen.",
+          "Nutzerbedürfnisse und Projektanforderungen ermitteln.",
+          "Problem und Erfolgskriterien definieren."
+        ]
+      },
+      "strategizeDesign": {
+        "title": "Strategie und Design",
+        "description": "Wir legen den Ansatz fest, gestalten das Nutzungserlebnis und schaffen eine klare Richtung, bevor die Entwicklung beginnt.",
+        "details": [
+          "Projektstrategie festlegen.",
+          "Nutzerreisen und Informationsarchitektur planen.",
+          "Visuelle Richtung und technischen Ansatz definieren."
+        ]
+      },
+      "buildValidate": {
+        "title": "Entwickeln und prüfen",
+        "description": "Wir entwickeln, integrieren und verfeinern die Lösung mit Blick auf Leistung, Qualität und Benutzerfreundlichkeit.",
+        "details": [
+          "Die abgestimmte Lösung umsetzen.",
+          "Benötigte Dienste und Systeme integrieren.",
+          "Funktionalität, Barrierefreiheit und Leistung testen."
+        ]
+      },
+      "launchImprove": {
+        "title": "Starten und verbessern",
+        "description": "Wir testen, veröffentlichen und messen die Ergebnisse, um mit dem Wachstum Ihres Unternehmens weitere Verbesserungsmöglichkeiten zu erkennen.",
+        "details": [
+          "Veröffentlichung vorbereiten und prüfen.",
+          "Die Lösung bereitstellen.",
+          "Möglichkeiten zur zukünftigen Optimierung erkennen."
+        ]
+      }
+    },
+    "closing": "Gute Arbeit ist kein Rätsel. Sie wissen, was als Nächstes passiert.",
+    "cta": "Sie planen ein Projekt? Sprechen wir darüber."
   }
 }
