@@ -4,14 +4,13 @@ import { useEffect, useRef } from "react";
 import { useLenis } from "lenis/react";
 
 const VIDEO_SRC = "/hero_background_video_optimized.webm";
-// Optional: first-frame JPG/WebP in /public so the background is never blank
-// while metadata loads or if decoding fails.
+
+// Add a first-frame image in /public if you want a fallback poster.
 const POSTER_SRC: string | undefined = undefined;
 
-// Seeking to exactly `duration` can render a blank frame in some browsers.
 const END_GUARD = 0.001;
-// Ignore seeks smaller than ~1 frame at 48fps (no visible change).
 const MIN_DELTA = 1 / 48;
+const SEEK_EPSILON = 0.04;
 
 const clamp01 = (value: number) =>
   Number.isFinite(value) ? Math.min(1, Math.max(0, value)) : 0;
@@ -23,16 +22,12 @@ const getNativeProgress = () => {
 
 export function ScrollVideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  // Lenis already smooths the scroll position (lerp), so the video simply
-  // follows it 1:1. No extra smoothing, no rAF loop of our own.
   const lenis = useLenis();
 
   useEffect(() => {
     const video = videoRef.current;
 
-    if (!video) {
-      return;
-    }
+    if (!video) return;
 
     const mobileQuery = window.matchMedia("(max-width: 767px)");
     const reducedMotionQuery = window.matchMedia(
@@ -46,37 +41,31 @@ export function ScrollVideoBackground() {
     let ready = false;
     let failed = false;
     let attached = false;
+    let seekInFlight = false;
 
-    const isDisabled = () => mobileQuery.matches || reducedMotionQuery.matches;
+    const isDisabled = () =>
+      mobileQuery.matches || reducedMotionQuery.matches;
 
-    // Event-driven scrubbing:
-    //  - each Lenis scroll tick seeks immediately if the decoder is idle;
-    //  - while a seek is in flight we only remember the latest progress;
-    //  - `seeked` then jumps straight to the newest target (no stale queue).
     const sync = () => {
-      if (!ready || failed || video.seeking) {
-        return;
-      }
+      if (!ready || failed || seekInFlight || video.seeking) return;
 
       const duration = video.duration;
 
-      if (!Number.isFinite(duration) || duration <= 0) {
-        return;
-      }
+      if (!Number.isFinite(duration) || duration <= 0) return;
 
       const target = Math.min(
         Math.max(0, duration - END_GUARD),
         Math.max(0, progress * duration),
       );
 
-      if (Math.abs(video.currentTime - target) < MIN_DELTA) {
-        return;
-      }
+      if (Math.abs(video.currentTime - target) < MIN_DELTA) return;
+
+      seekInFlight = true;
 
       try {
         video.currentTime = target;
       } catch {
-        // Seek rejected while media is changing; the next event retries.
+        seekInFlight = false;
       }
     };
 
@@ -91,24 +80,44 @@ export function ScrollVideoBackground() {
         Number.isFinite(video.duration) &&
         video.duration > 0;
 
-      if (ready) {
-        update();
+      if (ready) update();
+    };
+
+    const handleSeeked = () => {
+      seekInFlight = false;
+
+      if (!ready || failed) return;
+
+      const duration = video.duration;
+
+      if (!Number.isFinite(duration) || duration <= 0) return;
+
+      const target = Math.min(
+        Math.max(0, duration - END_GUARD),
+        Math.max(0, progress * duration),
+      );
+
+      if (
+        Number.isFinite(video.currentTime) &&
+        Math.abs(video.currentTime - target) >= SEEK_EPSILON
+      ) {
+        sync();
       }
     };
 
     const handleError = () => {
-      // Don't retry a failed asset; poster / static background stays visible.
       failed = true;
       ready = false;
+      seekInFlight = false;
       video.dataset.error = "true";
     };
 
     const attach = () => {
-      if (isDisabled() || attached || failed) {
-        return;
-      }
+      if (isDisabled() || attached || failed) return;
 
       attached = true;
+      delete video.dataset.error;
+
       video.preload = "auto";
       video.src = VIDEO_SRC;
       video.load();
@@ -119,12 +128,12 @@ export function ScrollVideoBackground() {
     };
 
     const detach = () => {
-      if (!attached) {
-        return;
-      }
+      if (!attached) return;
 
       attached = false;
       ready = false;
+      seekInFlight = false;
+
       video.pause();
       video.removeAttribute("src");
       video.load();
@@ -138,20 +147,18 @@ export function ScrollVideoBackground() {
       }
     };
 
-    // Page height can change (fonts, images, locale switch, RTL). Re-read
-    // progress so the video never stays stuck at a stale timestamp.
     const resizeObserver =
-      typeof ResizeObserver !== "undefined" ? new ResizeObserver(update) : null;
+      typeof ResizeObserver !== "undefined"
+        ? new ResizeObserver(update)
+        : null;
+
     resizeObserver?.observe(document.documentElement);
 
     video.addEventListener("loadedmetadata", handleMetadata);
     video.addEventListener("durationchange", handleMetadata);
-    video.addEventListener("seeked", sync);
+    video.addEventListener("seeked", handleSeeked);
     video.addEventListener("error", handleError);
 
-    // Lenis emits "scroll" every animation frame while it is easing, so the
-    // video tracks the smoothed position. Fall back to native scroll if the
-    // Lenis instance is not available yet.
     if (lenis) {
       lenis.on("scroll", update);
     } else {
@@ -171,12 +178,18 @@ export function ScrollVideoBackground() {
       }
 
       resizeObserver?.disconnect();
+
       mobileQuery.removeEventListener("change", handleEnvironmentChange);
-      reducedMotionQuery.removeEventListener("change", handleEnvironmentChange);
+      reducedMotionQuery.removeEventListener(
+        "change",
+        handleEnvironmentChange,
+      );
+
       video.removeEventListener("loadedmetadata", handleMetadata);
       video.removeEventListener("durationchange", handleMetadata);
-      video.removeEventListener("seeked", sync);
+      video.removeEventListener("seeked", handleSeeked);
       video.removeEventListener("error", handleError);
+
       detach();
     };
   }, [lenis]);
@@ -198,7 +211,6 @@ export function ScrollVideoBackground() {
         className="absolute inset-0 size-full object-cover"
       />
 
-      {/* One overlay instead of two stacked layers (same visual result). */}
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.31),rgba(255,255,255,0.42),rgba(255,255,255,0.56))]" />
     </div>
   );
