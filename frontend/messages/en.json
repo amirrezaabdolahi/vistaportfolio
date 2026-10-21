@@ -89,5 +89,30 @@
       "description": "Let's turn your next idea into something meaningful.",
       "label": "Let's talk"
     }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "WHY VISTA",
+    "title": "Not just digital solutions. Real progress.",
+    "description": "We combine thoughtful design, reliable engineering, and intelligent automation to help businesses move forward.",
+    "reasons": {
+      "strategy": {
+        "title": "Strategy before execution",
+        "description": "We understand the business problem first, then build the right solution instead of adding technology for its own sake."
+      },
+      "designEngineering": {
+        "title": "Design meets engineering",
+        "description": "Every experience is designed to look polished, feel intuitive, and work reliably across devices."
+      },
+      "purposefulAI": {
+        "title": "AI with a purpose",
+        "description": "We use automation and AI where they can reduce repetitive work, improve workflows, or create measurable value."
+      },
+      "growth": {
+        "title": "Built to grow",
+        "description": "We consider performance, maintainability, and future growth from the beginning—not as afterthoughts."
+      }
+    },
+    "closing": "Have a challenge worth solving?",
+    "cta": "Let's talk"
   }
 }
