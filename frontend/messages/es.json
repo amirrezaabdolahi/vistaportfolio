@@ -227,5 +227,93 @@
         "answer": "Es un punto de partida perfectamente válido. Podemos hablar del problema que quieres resolver, explorar posibles enfoques e identificar los siguientes pasos más útiles antes de comprometernos con un proyecto mayor."
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "INICIA UN PROYECTO",
+    "title": "¿Tienes algo en mente? Hagámoslo realidad.",
+    "description": "Tanto si quieres crear algo nuevo, mejorar lo que ya existe o explorar cómo la IA puede ayudar a tu negocio, nos encantará conocer tu proyecto.",
+    "reassurance": "No necesitas tener un plan completo para empezar. Cuéntanos tu idea y encontraremos juntos los siguientes pasos.",
+    "closingTitle": "Las buenas cosas empiezan con una conversación.",
+    "closingDescription": "¿Todavía no tienes todos los detalles? No pasa nada. Cuéntanos qué tienes en mente y lo iremos definiendo juntos.",
+    "detailsTitle": "Primero, conozcámonos.",
+    "name": "Nombre completo",
+    "email": "Correo de trabajo",
+    "company": "Empresa u organización",
+    "website": "URL del sitio web",
+    "servicesTitle": "¿En qué te gustaría trabajar?",
+    "servicesDescription": "Elige todas las opciones que quieras. Nos ayudarán a entender cómo podemos ayudarte.",
+    "services": {
+      "web": "Desarrollo web",
+      "design": "Diseño UI/UX",
+      "ai": "IA y automatización",
+      "seo": "SEO y marketing digital",
+      "consulting": "Consultoría de TI",
+      "other": "Algo más"
+    },
+    "otherService": "¿Qué más tienes en mente?",
+    "projectTitle": "Cuéntanos un poco sobre tu proyecto.",
+    "projectDescriptionHelp": "Una idea inicial es suficiente. Te ayudaremos a definir los siguientes pasos.",
+    "projectDescriptionLabel": "¿Qué quieres crear, mejorar o resolver?",
+    "projectPlaceholder": "Cuéntanos tu idea, el reto al que te enfrentas o lo que te gustaría conseguir...",
+    "stageTitle": "¿En qué etapa estás?",
+    "stageDescription": "Esto nos ayuda a entender qué tipo de apoyo puede ser más útil.",
+    "stages": {
+      "exploring": {
+        "label": "Estoy explorando",
+        "description": "Tengo una idea y quiero conocer las posibilidades."
+      },
+      "defining": {
+        "label": "Definiendo la idea",
+        "description": "Conozco el problema, pero necesito ayuda para dar forma a la solución."
+      },
+      "ready": {
+        "label": "Listo para empezar",
+        "description": "Tengo una dirección clara y quiero comenzar."
+      },
+      "improving": {
+        "label": "Mejorando una solución existente",
+        "description": "Quiero mejorar o ampliar algo que ya existe."
+      }
+    },
+    "supportTitle": "¿Qué tipo de ayuda te resultaría más útil?",
+    "support": {
+      "strategy": "Estrategia y planificación",
+      "design": "Diseño y experiencia de usuario",
+      "development": "Desarrollo e implementación",
+      "automation": "Automatización e integración de IA",
+      "growth": "Crecimiento, SEO y marketing digital",
+      "ongoing": "Mejora continua y soporte",
+      "unsure": "Todavía no lo sé"
+    },
+    "budgetTitle": "¿Tienes un presupuesto en mente?",
+    "budgetDescription": "Una estimación nos ayuda a proponer un enfoque adecuado para tus necesidades.",
+    "budgets": {
+      "under5k": "Menos de 5.000 € (ejemplo editable)",
+      "5to15k": "5.000–15.000 € (ejemplo editable)",
+      "15to30k": "15.000–30.000 € (ejemplo editable)",
+      "30kplus": "Más de 30.000 € (ejemplo editable)",
+      "unsure": "Todavía no lo sé",
+      "preferNot": "Prefiero no decirlo"
+    },
+    "budgetNote": "Son rangos de ejemplo, no precios oficiales de Vista. Ajústalos antes del lanzamiento.",
+    "timelineTitle": "¿Cuándo te gustaría empezar?",
+    "timelines": {
+      "asap": "Lo antes posible",
+      "month": "Durante el próximo mes",
+      "oneToThreeMonths": "En 1–3 meses",
+      "exploring": "Por ahora solo estoy explorando",
+      "flexible": "Sin un plazo fijo"
+    },
+    "additionalTitle": "¿Hay algo más que debamos saber?",
+    "additionalPlaceholder": "Comparte más contexto, requisitos o preguntas...",
+    "submit": "Enviar consulta del proyecto",
+    "submissionNote": "Tus datos permanecen en este formulario. El envío estará disponible cuando se configure un servicio de contacto seguro.",
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "email": "Introduce una dirección de correo válida.",
+      "url": "Introduce una URL válida que comience por http:// o https://.",
+      "summary": "Revisa los campos señalados."
+    },
+    "submissionUnavailable": "El formulario es válido, pero el envío seguro de mensajes aún no está configurado. No se han enviado tus datos."
   }
 }
