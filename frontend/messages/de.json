@@ -5,7 +5,8 @@
     "work": "Projekte",
     "about": "Über uns",
     "contact": "Kontakt",
-    "cta": "Projekt starten"
+    "cta": "Projekt starten",
+    "faq": "FAQ"
   },
   "Hero": {
     "eyebrow": "DIGITALE LÖSUNGEN MIT KI",
@@ -314,6 +315,9 @@
       "url": "Bitte geben Sie eine gültige URL mit http:// oder https:// ein.",
       "summary": "Bitte prüfen Sie die markierten Felder."
     },
-    "submissionUnavailable": "Das Formular ist gültig, aber der sichere Nachrichtenversand ist noch nicht eingerichtet. Ihre Angaben wurden nicht gesendet."
+    "submissionUnavailable": "Das Formular ist gültig, aber der sichere Nachrichtenversand ist noch nicht eingerichtet. Ihre Angaben wurden nicht gesendet.",
+    "footerNavigation": "Footer-Navigation",
+    "copyright": "Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben"
   }
 }
