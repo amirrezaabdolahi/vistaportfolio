@@ -8,6 +8,7 @@ import { OurProcessSection } from "@/components/sections/our-process-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { ContactSection } from "@/components/sections/contact-section";
+import { SiteFooter } from "@/components/layout/site-footer";
 
 export const instant = false;
 
@@ -27,6 +28,7 @@ export default function Home() {
           <FAQSection />
           <ContactSection />
         </main>
+        <SiteFooter />
       </div>
     </>
   );
