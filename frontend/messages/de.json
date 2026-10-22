@@ -5,7 +5,8 @@
     "work": "Projekte",
     "about": "Über uns",
     "contact": "Kontakt",
-    "cta": "Projekt starten"
+    "cta": "Projekt starten",
+    "faq": "FAQ"
   },
   "Hero": {
     "eyebrow": "DIGITALE LÖSUNGEN MIT KI",
@@ -227,5 +228,96 @@
         "answer": "Das ist ein völlig guter Ausgangspunkt. Wir können das Problem besprechen, das Sie lösen möchten, mögliche Ansätze erkunden und die sinnvollsten nächsten Schritte bestimmen, bevor Sie sich auf ein größeres Projekt festlegen."
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "PROJEKT STARTEN",
+    "title": "Sie haben eine Idee? Lassen Sie sie uns gemeinsam umsetzen.",
+    "description": "Ob Sie etwas Neues entwickeln, Bestehendes verbessern oder herausfinden möchten, wie KI Ihrem Unternehmen helfen kann – wir freuen uns, von Ihrem Vorhaben zu hören.",
+    "reassurance": "Sie brauchen noch keinen vollständigen Plan. Erzählen Sie uns von Ihrer Idee, und wir finden gemeinsam die nächsten Schritte.",
+    "closingTitle": "Gute Dinge beginnen mit einem Gespräch.",
+    "closingDescription": "Noch sind nicht alle Details klar? Kein Problem. Erzählen Sie uns von Ihrer Idee, und wir gehen den nächsten Schritt gemeinsam.",
+    "detailsTitle": "Lernen wir uns zunächst kennen.",
+    "name": "Vollständiger Name",
+    "email": "Geschäftliche E-Mail",
+    "company": "Unternehmen oder Organisation",
+    "website": "Website-URL",
+    "servicesTitle": "Woran möchten Sie arbeiten?",
+    "servicesDescription": "Wählen Sie beliebig viele Optionen aus. So verstehen wir besser, wie wir helfen können.",
+    "services": {
+      "web": "Webentwicklung",
+      "design": "UI/UX-Design",
+      "ai": "KI und Automatisierung",
+      "seo": "SEO und digitales Marketing",
+      "consulting": "IT-Beratung",
+      "other": "Etwas anderes"
+    },
+    "otherService": "Was haben Sie sonst im Sinn?",
+    "projectTitle": "Erzählen Sie uns etwas über Ihr Projekt.",
+    "projectDescriptionHelp": "Eine grobe Idee reicht. Wir helfen Ihnen, die nächsten Schritte zu finden.",
+    "projectDescriptionLabel": "Was möchten Sie entwickeln, verbessern oder lösen?",
+    "projectPlaceholder": "Erzählen Sie von Ihrer Idee, Ihrer Herausforderung oder Ihrem gewünschten Ergebnis...",
+    "stageTitle": "Wo stehen Sie gerade?",
+    "stageDescription": "So können wir besser einschätzen, welche Unterstützung sinnvoll ist.",
+    "stages": {
+      "exploring": {
+        "label": "Erst einmal erkunden",
+        "description": "Ich habe eine Idee und möchte die Möglichkeiten verstehen."
+      },
+      "defining": {
+        "label": "Idee konkretisieren",
+        "description": "Ich kenne das Problem, brauche aber Hilfe bei der Lösung."
+      },
+      "ready": {
+        "label": "Bereit loszulegen",
+        "description": "Die Richtung ist klar, und ich möchte starten."
+      },
+      "improving": {
+        "label": "Bestehende Lösung verbessern",
+        "description": "Ich möchte etwas Bestehendes verbessern oder erweitern."
+      }
+    },
+    "supportTitle": "Welche Unterstützung wäre am hilfreichsten?",
+    "support": {
+      "strategy": "Strategie und Planung",
+      "design": "Design und Nutzererlebnis",
+      "development": "Entwicklung und Umsetzung",
+      "automation": "Automatisierung und KI-Integration",
+      "growth": "Wachstum, SEO und digitales Marketing",
+      "ongoing": "Kontinuierliche Verbesserung und Support",
+      "unsure": "Noch nicht sicher"
+    },
+    "budgetTitle": "Haben Sie ein Budget im Sinn?",
+    "budgetDescription": "Eine Schätzung hilft uns, einen passenden Ansatz vorzuschlagen.",
+    "budgets": {
+      "under5k": "Unter 5.000 € (editierbares Beispiel)",
+      "5to15k": "5.000–15.000 € (editierbares Beispiel)",
+      "15to30k": "15.000–30.000 € (editierbares Beispiel)",
+      "30kplus": "Über 30.000 € (editierbares Beispiel)",
+      "unsure": "Noch nicht sicher",
+      "preferNot": "Möchte ich nicht angeben"
+    },
+    "budgetNote": "Dies sind nur Beispielbereiche, keine offiziellen Vista-Preise. Bitte vor dem Start anpassen.",
+    "timelineTitle": "Wann möchten Sie beginnen?",
+    "timelines": {
+      "asap": "So bald wie möglich",
+      "month": "Im nächsten Monat",
+      "oneToThreeMonths": "In 1–3 Monaten",
+      "exploring": "Ich informiere mich erst einmal",
+      "flexible": "Kein fester Zeitplan"
+    },
+    "additionalTitle": "Gibt es noch etwas, das wir wissen sollten?",
+    "additionalPlaceholder": "Weitere Informationen, Anforderungen oder Fragen...",
+    "submit": "Projektanfrage senden",
+    "submissionNote": "Ihre Angaben bleiben in diesem Formular. Der Versand ist erst möglich, wenn ein sicherer Kontaktdienst eingerichtet wurde.",
+    "errors": {
+      "required": "Dieses Feld ist erforderlich.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "url": "Bitte geben Sie eine gültige URL mit http:// oder https:// ein.",
+      "summary": "Bitte prüfen Sie die markierten Felder."
+    },
+    "submissionUnavailable": "Das Formular ist gültig, aber der sichere Nachrichtenversand ist noch nicht eingerichtet. Ihre Angaben wurden nicht gesendet.",
+    "footerNavigation": "Footer-Navigation",
+    "copyright": "Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben"
   }
 }

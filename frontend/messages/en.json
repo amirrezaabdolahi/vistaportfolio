@@ -5,7 +5,8 @@
     "work": "Our Work",
     "about": "About",
     "contact": "Contact",
-    "cta": "Start a Project"
+    "cta": "Start a Project",
+    "faq": "FAQ"
   },
   "Hero": {
     "eyebrow": "AI-POWERED DIGITAL SOLUTIONS",
@@ -227,5 +228,96 @@
         "answer": "That's a perfectly reasonable place to start. We can discuss the problem you're trying to solve, explore possible approaches, and identify the most useful next steps before committing to a larger project."
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "START A PROJECT",
+    "title": "Have something in mind? Let's make it happen.",
+    "description": "Whether you're building something new, improving what exists, or exploring how AI can help your business, we'd love to hear what you're working on.",
+    "reassurance": "You don't need a complete plan to get started. Tell us what you have in mind, and we'll take it from there.",
+    "closingTitle": "Good things start with a conversation.",
+    "closingDescription": "Not sure about all the details yet? That's okay. Tell us what you have in mind, and we'll take it from there.",
+    "detailsTitle": "First, let's get to know you.",
+    "name": "Full name",
+    "email": "Work email",
+    "company": "Company or organization",
+    "website": "Website URL",
+    "servicesTitle": "What would you like to work on?",
+    "servicesDescription": "Choose as many as you like. We'll use this to understand where we can help.",
+    "services": {
+      "web": "Web Development",
+      "design": "UI/UX Design",
+      "ai": "AI & Automation",
+      "seo": "SEO & Digital Marketing",
+      "consulting": "IT Consulting",
+      "other": "Something Else"
+    },
+    "otherService": "What else do you have in mind?",
+    "projectTitle": "Tell us a little about your project.",
+    "projectDescriptionHelp": "A rough idea is enough. We'll help you figure out the next steps.",
+    "projectDescriptionLabel": "What are you trying to build, improve, or solve?",
+    "projectPlaceholder": "Tell us about your idea, the challenge you're facing, or what you'd like to achieve...",
+    "stageTitle": "Where are you in the process?",
+    "stageDescription": "This helps us understand what kind of support would be most useful.",
+    "stages": {
+      "exploring": {
+        "label": "Just exploring",
+        "description": "I have an idea and want to understand the possibilities."
+      },
+      "defining": {
+        "label": "Defining the idea",
+        "description": "I know the problem but need help shaping the solution."
+      },
+      "ready": {
+        "label": "Ready to start",
+        "description": "I have a clear direction and want to begin."
+      },
+      "improving": {
+        "label": "Improving an existing solution",
+        "description": "I want to improve or expand something already built."
+      }
+    },
+    "supportTitle": "What would be most helpful?",
+    "support": {
+      "strategy": "Strategy and planning",
+      "design": "Design and user experience",
+      "development": "Development and implementation",
+      "automation": "Automation and AI integration",
+      "growth": "Growth, SEO, and digital marketing",
+      "ongoing": "Ongoing improvement and support",
+      "unsure": "Not sure yet"
+    },
+    "budgetTitle": "Do you have a budget in mind?",
+    "budgetDescription": "An estimate helps us suggest an approach that fits your needs.",
+    "budgets": {
+      "under5k": "Under €5,000 (editable example)",
+      "5to15k": "€5,000–€15,000 (editable example)",
+      "15to30k": "€15,000–€30,000 (editable example)",
+      "30kplus": "€30,000+ (editable example)",
+      "unsure": "Not sure yet",
+      "preferNot": "Prefer not to say"
+    },
+    "budgetNote": "Example ranges only, not official Vista pricing. Configure these before launch.",
+    "timelineTitle": "When would you like to get started?",
+    "timelines": {
+      "asap": "As soon as possible",
+      "month": "Within the next month",
+      "oneToThreeMonths": "In 1–3 months",
+      "exploring": "Just exploring for now",
+      "flexible": "No fixed timeline"
+    },
+    "additionalTitle": "Anything else we should know?",
+    "additionalPlaceholder": "Share any additional context, requirements, or questions...",
+    "submit": "Send project inquiry",
+    "submissionNote": "Your details stay in this form. Submission is not available until a secure contact service is configured.",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "url": "Enter a valid URL beginning with http:// or https://.",
+      "summary": "Please review the highlighted fields."
+    },
+    "submissionUnavailable": "Your form is valid, but secure message delivery has not been configured yet. Your information has not been sent.",
+    "footerNavigation": "Footer navigation",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top"
   }
 }
