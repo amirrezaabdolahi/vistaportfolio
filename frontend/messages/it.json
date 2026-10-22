@@ -5,7 +5,8 @@
     "work": "Progetti",
     "about": "Chi siamo",
     "contact": "Contatti",
-    "cta": "Avvia un progetto"
+    "cta": "Avvia un progetto",
+    "faq": "FAQ"
   },
   "Hero": {
     "eyebrow": "SOLUZIONI DIGITALI CON IA",
@@ -314,6 +315,9 @@
       "url": "Inserisci un URL valido che inizi con http:// o https://.",
       "summary": "Controlla i campi evidenziati."
     },
-    "submissionUnavailable": "Il modulo è valido, ma l'invio sicuro dei messaggi non è ancora configurato. I tuoi dati non sono stati inviati."
+    "submissionUnavailable": "Il modulo è valido, ma l'invio sicuro dei messaggi non è ancora configurato. I tuoi dati non sono stati inviati.",
+    "footerNavigation": "Navigazione a piè di pagina",
+    "copyright": "Tutti i diritti riservati.",
+    "backToTop": "Torna su"
   }
 }
