@@ -17,8 +17,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.025)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_90%)]" />
       </div>
 
-      <div className="mx-auto grid min-h-[calc(100svh-76px)] max-w-[1440px] items-center gap-14 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-12 lg:py-20">
-        <div className="relative z-10 max-w-3xl">
+      <div className="mx-auto grid min-h-[calc(100svh-76px)] max-w-[1440px] items-center px-5 py-20 sm:px-8 sm:py-24  lg:gap-10 lg:px-12 lg:py-20">
+        <div className="relative z-10 w-full! flex flex-col items-center text-center ">
           <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-white/80 px-3.5 py-2 shadow-sm">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-40" />
@@ -38,11 +38,11 @@ export function Hero() {
             {t("description")}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center w-full sm:w-auto">
             <Button
               nativeButton={false}
               size="lg"
-              className="h-13 rounded-full px-6 text-sm font-medium"
+              className="h-13 rounded-full px-6 text-sm font-medium w-full! sm:w-auto! "
               render={<Link href="#contact" />}
             >
               {t("primaryCta")}
@@ -53,7 +53,7 @@ export function Hero() {
               nativeButton={false}
               variant="outline"
               size="lg"
-              className="h-13 rounded-full border-black/10 bg-white/70 px-6 text-sm font-medium hover:bg-neutral-50"
+              className="h-13 rounded-full border-black/10 bg-white/70 px-6 text-sm w-full!  sm:w-auto! font-medium hover:bg-neutral-50"
               render={<Link href="#work" />}
             >
               {t("secondaryCta")}
@@ -65,79 +65,6 @@ export function Hero() {
               <Plus size={12} />
             </span>
             <span>{t("availability")}</span>
-          </div>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-[560px] lg:ms-auto">
-          <div className="relative aspect-[0.92/1] overflow-hidden rounded-[2rem] border border-black/[0.06]  p-5 sm:p-8">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(255,255,255,1),rgba(247,247,245,0.1)_65%)]" />
-
-            <div className="relative flex h-full flex-col justify-between">
-              <div className="flex items-start justify-between">
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-                    VISTA / 001
-                  </p>
-                  <p className="mt-2 text-sm font-medium text-neutral-800">
-                    {t("visualLabel")}
-                  </p>
-                </div>
-
-                <div className="flex size-10 items-center justify-center rounded-full border border-black/[0.08] bg-white/80">
-                  <ArrowUpRight
-                    size={18}
-                    className="-rotate-45 text-neutral-700"
-                  />
-                </div>
-              </div>
-
-              <div className="relative mx-auto flex aspect-square w-full max-w-[330px] items-center justify-center">
-                <div className="absolute inset-[8%] rounded-full border border-black/[0.08]" />
-                <div className="absolute inset-[19%] rounded-full border border-black/[0.09]" />
-                <div className="absolute inset-[30%] rounded-full border border-black/[0.1]" />
-                <div className="absolute h-[88%] w-px bg-black/[0.08]" />
-                <div className="absolute h-px w-[88%] bg-black/[0.08]" />
-                <div className="absolute inset-[12%] rotate-45 rounded-[2rem] border border-black/[0.12]" />
-                <div className="absolute inset-[22%] -rotate-12 rounded-[2rem] border border-black/[0.12]" />
-
-                <div className="relative flex size-[36%] items-center justify-center rounded-[1.75rem] border border-white/20 bg-neutral-950 shadow-[0_24px_80px_rgba(0,0,0,0.22)]">
-                  <div className="absolute inset-2 rounded-[1.2rem] border border-white/10" />
-                  <span className="text-5xl font-medium tracking-[-0.1em] text-white">
-                    <Image alt="" src="/logo.png" width={120} height={120} />
-                  </span>
-                </div>
-
-                <span className="absolute right-[9%] top-[23%] size-3 rounded-full border-2 border-[#F7F7F5] bg-emerald-500 shadow-[0_0_0_5px_rgba(16,185,129,0.1)]" />
-                <span className="absolute bottom-[16%] left-[15%] size-2 rounded-full bg-neutral-400" />
-                <span className="absolute left-[23%] top-[12%] size-1.5 rounded-full bg-neutral-300" />
-              </div>
-
-              <div className="flex items-end justify-between gap-4 border-t border-black/[0.08] pt-5">
-                <div>
-                  <p className="text-xs text-neutral-500">{t("statLabel")}</p>
-                  <p className="mt-1 text-lg font-medium tracking-tight text-neutral-900">
-                    {t("statValue")}
-                  </p>
-                </div>
-
-                <p className="max-w-[150px] text-end text-xs leading-5 text-neutral-500">
-                  {t("visualCaption")}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute -bottom-5 -start-3 flex items-center gap-3 rounded-2xl border border-black/[0.06] bg-white p-4 shadow-[0_12px_40px_rgba(0,0,0,0.06)] sm:-start-6 sm:p-5">
-            <div className="flex size-10 items-center justify-center rounded-xl bg-neutral-950 text-white">
-              <ArrowUpRight size={18} />
-            </div>
-
-            <div>
-              <p className="text-xs text-neutral-500">{t("floatingLabel")}</p>
-              <p className="mt-1 text-sm font-medium text-neutral-900">
-                {t("floatingValue")}
-              </p>
-            </div>
           </div>
         </div>
       </div>

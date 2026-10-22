@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useLenis } from "lenis/react";
 
-const VIDEO_SRC = "/hero_background_video_optimized.webm";
+const VIDEO_SRC = "/hero_background_video_reversed.webm";
 
 // Add a first-frame image in /public if you want a fallback poster.
 const POSTER_SRC: string | undefined = undefined;
@@ -43,8 +43,7 @@ export function ScrollVideoBackground() {
     let attached = false;
     let seekInFlight = false;
 
-    const isDisabled = () =>
-      mobileQuery.matches || reducedMotionQuery.matches;
+    const isDisabled = () => mobileQuery.matches || reducedMotionQuery.matches;
 
     const sync = () => {
       if (!ready || failed || seekInFlight || video.seeking) return;
@@ -148,9 +147,7 @@ export function ScrollVideoBackground() {
     };
 
     const resizeObserver =
-      typeof ResizeObserver !== "undefined"
-        ? new ResizeObserver(update)
-        : null;
+      typeof ResizeObserver !== "undefined" ? new ResizeObserver(update) : null;
 
     resizeObserver?.observe(document.documentElement);
 
@@ -180,10 +177,7 @@ export function ScrollVideoBackground() {
       resizeObserver?.disconnect();
 
       mobileQuery.removeEventListener("change", handleEnvironmentChange);
-      reducedMotionQuery.removeEventListener(
-        "change",
-        handleEnvironmentChange,
-      );
+      reducedMotionQuery.removeEventListener("change", handleEnvironmentChange);
 
       video.removeEventListener("loadedmetadata", handleMetadata);
       video.removeEventListener("durationchange", handleMetadata);
