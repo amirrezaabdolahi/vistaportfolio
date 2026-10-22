@@ -13,7 +13,6 @@ export function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden ">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_35%,rgba(0,0,0,0.035),transparent_45%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.025)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_90%)]" />
       </div>
 
