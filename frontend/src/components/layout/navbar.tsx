@@ -29,8 +29,15 @@ export function Navbar() {
           aria-label="Vista home"
           onClick={() => setIsMenuOpen(false)}
         >
-          <span className="flex size-9 items-center justify-center rounded-xl bg-black text-sm font-semibold tracking-tight text-white">
-            <Image alt="" src="/logo.png" width={48} height={48} />
+          <span className="flex size-9 shrink-0 items-center justify-center">
+            <Image
+              alt=""
+              src="/vista-mark.svg"
+              width={36}
+              height={36}
+              priority
+              className="size-9 object-contain"
+            />
           </span>
 
           <span className="text-xl font-semibold tracking-[-0.06em]">
