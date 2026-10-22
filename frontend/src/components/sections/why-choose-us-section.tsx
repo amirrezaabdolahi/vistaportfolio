@@ -25,7 +25,7 @@ export function WhyChooseUsSection() {
 
   return (
     <section
-      id="about"
+      id="why-vista"
       aria-labelledby="why-vista-heading"
       className="scroll-mt-24 overflow-hidden bg-neutral-50/75 py-24 sm:py-28 lg:py-32"
     >
