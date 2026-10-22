@@ -5,6 +5,28 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SmoothScroll } from "@/components/providers/smooth-scroll";
 
+const proximaNova = localFont({
+  src: [
+    {
+      path: "../../public/fonts/ProximaNova/ProximaNovaRegular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/ProximaNova/ProximaNovaBold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/ProximaNova/ProximaNovaBlack.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-proxima-nova",
+  display: "swap",
+});
+
 const inter = localFont({
   src: [
     {
@@ -85,20 +107,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn(
         "h-full",
         "antialiased",
-        inter.variable,
         estedad.variable,
         geistSans.variable,
         geistMono.variable,
-        "font-sans",
+        proximaNova.variable,
+        "font-[family-name:var(--font-proxima-nova)]",
       )}
     >
-      <body
-        className="flex min-h-full flex-col"
-  
-      >
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+      <body className="flex min-h-full flex-col">
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

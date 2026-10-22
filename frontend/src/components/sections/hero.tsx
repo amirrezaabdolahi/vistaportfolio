@@ -29,7 +29,7 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="max-w-3xl text-[clamp(2.75rem,6.2vw,5.75rem)] font-medium leading-[1.08] tracking-[-0.065em] text-neutral-950">
+          <h1 className="max-w-3xl md:w-xl text-[clamp(2.25rem,5vw,4.5rem)] font-medium leading-[1.08] tracking-[-0.065em] text-neutral-950">
             {t("title")}
           </h1>
 

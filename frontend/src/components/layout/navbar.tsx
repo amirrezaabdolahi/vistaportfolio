@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <header
       id="top"
-      className="sticky top-0 z-50 border-b border-black/[0.06] bg-white/50 backdrop-blur-xl"
+      className="sticky top-0 z-50 border-b border-black/[0.06] bg-white/50 backdrop-blur-md"
     >
       <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link

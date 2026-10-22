@@ -213,7 +213,7 @@ export function ScrollVideoBackground() {
         className="absolute inset-0 size-full -scale-x-100 object-cover rtl:scale-x-100"
       />
 
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.31),rgba(255,255,255,0.42),rgba(255,255,255,0.56))]" />
+      <div className="absolute inset-0" />
     </div>
   );
 }
