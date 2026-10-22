@@ -227,5 +227,93 @@
         "answer": "È un punto di partenza assolutamente valido. Possiamo parlare del problema da risolvere, esplorare possibili approcci e individuare i prossimi passi più utili prima di impegnarci in un progetto più ampio."
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "AVVIA UN PROGETTO",
+    "title": "Hai un'idea in mente? Realizziamola insieme.",
+    "description": "Che tu voglia creare qualcosa di nuovo, migliorare ciò che esiste o capire come l'IA possa aiutare la tua attività, ci piacerebbe conoscere il tuo progetto.",
+    "reassurance": "Non serve avere già un piano completo. Raccontaci la tua idea e definiremo insieme i prossimi passi.",
+    "closingTitle": "Le cose belle iniziano con una conversazione.",
+    "closingDescription": "Non hai ancora tutti i dettagli? Va benissimo. Raccontaci cosa hai in mente e capiremo insieme come procedere.",
+    "detailsTitle": "Per prima cosa, conosciamoci.",
+    "name": "Nome e cognome",
+    "email": "Email di lavoro",
+    "company": "Azienda o organizzazione",
+    "website": "URL del sito web",
+    "servicesTitle": "Su cosa vorresti lavorare?",
+    "servicesDescription": "Scegli tutte le opzioni che vuoi: ci aiuteranno a capire come possiamo esserti utili.",
+    "services": {
+      "web": "Sviluppo web",
+      "design": "Design UI/UX",
+      "ai": "IA e automazione",
+      "seo": "SEO e marketing digitale",
+      "consulting": "Consulenza IT",
+      "other": "Altro"
+    },
+    "otherService": "Cos'altro hai in mente?",
+    "projectTitle": "Raccontaci qualcosa del tuo progetto.",
+    "projectDescriptionHelp": "Basta anche un'idea iniziale. Ti aiuteremo a individuare i prossimi passi.",
+    "projectDescriptionLabel": "Cosa vuoi creare, migliorare o risolvere?",
+    "projectPlaceholder": "Raccontaci la tua idea, la sfida che affronti o il risultato che vorresti ottenere...",
+    "stageTitle": "A che punto sei?",
+    "stageDescription": "Ci aiuta a capire quale tipo di supporto può esserti più utile.",
+    "stages": {
+      "exploring": {
+        "label": "Sto esplorando",
+        "description": "Ho un'idea e voglio capire le possibilità."
+      },
+      "defining": {
+        "label": "Sto definendo l'idea",
+        "description": "Conosco il problema ma vorrei aiuto per definire la soluzione."
+      },
+      "ready": {
+        "label": "Pronto a iniziare",
+        "description": "Ho una direzione chiara e voglio partire."
+      },
+      "improving": {
+        "label": "Migliorare una soluzione esistente",
+        "description": "Voglio migliorare o ampliare qualcosa che esiste già."
+      }
+    },
+    "supportTitle": "Quale supporto sarebbe più utile?",
+    "support": {
+      "strategy": "Strategia e pianificazione",
+      "design": "Design ed esperienza utente",
+      "development": "Sviluppo e implementazione",
+      "automation": "Automazione e integrazione IA",
+      "growth": "Crescita, SEO e marketing digitale",
+      "ongoing": "Miglioramento continuo e supporto",
+      "unsure": "Non lo so ancora"
+    },
+    "budgetTitle": "Hai già un budget in mente?",
+    "budgetDescription": "Una stima ci aiuta a proporre un approccio adatto alle tue esigenze.",
+    "budgets": {
+      "under5k": "Meno di 5.000 € (esempio modificabile)",
+      "5to15k": "5.000–15.000 € (esempio modificabile)",
+      "15to30k": "15.000–30.000 € (esempio modificabile)",
+      "30kplus": "Oltre 30.000 € (esempio modificabile)",
+      "unsure": "Non lo so ancora",
+      "preferNot": "Preferisco non indicarlo"
+    },
+    "budgetNote": "Sono fasce d'esempio, non prezzi ufficiali Vista. Modificale prima del lancio.",
+    "timelineTitle": "Quando vorresti iniziare?",
+    "timelines": {
+      "asap": "Il prima possibile",
+      "month": "Entro il prossimo mese",
+      "oneToThreeMonths": "Tra 1 e 3 mesi",
+      "exploring": "Per ora sto esplorando",
+      "flexible": "Senza una scadenza precisa"
+    },
+    "additionalTitle": "C'è altro che dovremmo sapere?",
+    "additionalPlaceholder": "Aggiungi contesto, requisiti o altre domande...",
+    "submit": "Invia la richiesta di progetto",
+    "submissionNote": "I tuoi dati restano in questo modulo. L'invio sarà disponibile solo dopo aver configurato un servizio di contatto sicuro.",
+    "errors": {
+      "required": "Questo campo è obbligatorio.",
+      "email": "Inserisci un indirizzo email valido.",
+      "url": "Inserisci un URL valido che inizi con http:// o https://.",
+      "summary": "Controlla i campi evidenziati."
+    },
+    "submissionUnavailable": "Il modulo è valido, ma l'invio sicuro dei messaggi non è ancora configurato. I tuoi dati non sono stati inviati."
   }
 }
