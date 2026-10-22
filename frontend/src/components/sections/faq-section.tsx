@@ -25,7 +25,7 @@ export function FAQSection() {
     <section
       id="faq"
       aria-labelledby={`faq-heading-${instanceId}`}
-      className="scroll-mt-24 border-y border-black/[0.04] bg-white/85 py-20 sm:py-24 lg:py-28"
+      className="scroll-mt-24 border-y border-black/[0.04] bg-white/60 py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto grid max-w-[1440px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20 lg:px-12">
         <div className="flex flex-col items-start">
