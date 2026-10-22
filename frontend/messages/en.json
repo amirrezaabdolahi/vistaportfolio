@@ -5,7 +5,8 @@
     "work": "Our Work",
     "about": "About",
     "contact": "Contact",
-    "cta": "Start a Project"
+    "cta": "Start a Project",
+    "faq": "FAQ"
   },
   "Hero": {
     "eyebrow": "AI-POWERED DIGITAL SOLUTIONS",
@@ -314,6 +315,9 @@
       "url": "Enter a valid URL beginning with http:// or https://.",
       "summary": "Please review the highlighted fields."
     },
-    "submissionUnavailable": "Your form is valid, but secure message delivery has not been configured yet. Your information has not been sent."
+    "submissionUnavailable": "Your form is valid, but secure message delivery has not been configured yet. Your information has not been sent.",
+    "footerNavigation": "Footer navigation",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top"
   }
 }
