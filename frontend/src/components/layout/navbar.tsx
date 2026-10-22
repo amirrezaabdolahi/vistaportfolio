@@ -12,8 +12,10 @@ import Image from "next/image";
 const navigationItems = [
   { key: "services", href: "#services" },
   { key: "work", href: "#work" },
+  { key: "whyVista", href: "#why-vista" },
+  { key: "process", href: "#process" },
   { key: "about", href: "#about" },
-  { key: "contact", href: "#contact" },
+  { key: "faq", href: "#faq" },
 ] as const;
 
 export function Navbar() {
