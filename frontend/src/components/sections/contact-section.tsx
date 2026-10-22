@@ -61,7 +61,7 @@ export function ContactSection() {
   const [status, setStatus] = useState<"idle" | "error">("idle");
   const [errorSummary, setErrorSummary] = useState("");
 
-  const update = <K extends keyof FormValues>(key: K, value: FormValues[K]) => {
+  const update = <K extends keyof FormValues,>(key: K, value: FormValues[K]) => {
     setValues((current) => ({ ...current, [key]: value }));
     setStatus("idle");
     setErrorSummary("");
