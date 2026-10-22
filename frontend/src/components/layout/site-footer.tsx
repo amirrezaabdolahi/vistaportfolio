@@ -23,7 +23,7 @@ export function SiteFooter() {
         </nav>
         <div className="flex items-center justify-between gap-5 text-xs text-neutral-500 md:justify-end">
           <span>© {new Date().getFullYear()} Vista. {t("copyright")}</span>
-          <a href="#top" className="inline-flex items-center gap-1.5 transition-colors hover:text-neutral-950">
+          <a href="#home" className="inline-flex items-center gap-1.5 transition-colors hover:text-neutral-950">
             {t("backToTop")} <ArrowUp aria-hidden="true" size={14} />
           </a>
         </div>
