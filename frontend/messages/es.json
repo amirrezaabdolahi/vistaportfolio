@@ -5,7 +5,8 @@
     "work": "Proyectos",
     "about": "Nosotros",
     "contact": "Contacto",
-    "cta": "Iniciar un proyecto"
+    "cta": "Iniciar un proyecto",
+    "faq": "Preguntas frecuentes"
   },
   "Hero": {
     "eyebrow": "SOLUCIONES DIGITALES CON IA",
@@ -314,6 +315,9 @@
       "url": "Introduce una URL válida que comience por http:// o https://.",
       "summary": "Revisa los campos señalados."
     },
-    "submissionUnavailable": "El formulario es válido, pero el envío seguro de mensajes aún no está configurado. No se han enviado tus datos."
+    "submissionUnavailable": "El formulario es válido, pero el envío seguro de mensajes aún no está configurado. No se han enviado tus datos.",
+    "footerNavigation": "Navegación del pie de página",
+    "copyright": "Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
   }
 }
