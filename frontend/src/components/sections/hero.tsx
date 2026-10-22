@@ -17,8 +17,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.025)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_90%)]" />
       </div>
 
-      <div className="mx-auto grid min-h-[calc(100svh-76px)] max-w-[1440px] items-center px-5 py-20 sm:px-8 sm:py-24  lg:gap-10 lg:px-12 lg:py-20">
-        <div className="relative z-10 w-full! flex flex-col items-center text-center ">
+      <div className="mx-auto grid min-h-[calc(100svh-76px)] max-w-[1440px] items-center grid-cols-1 md:grid-cols-2 px-5 py-20 sm:px-8 sm:py-24  lg:gap-10 lg:px-12 lg:py-20">
+        <div className="relative z-10 w-full! ">
           <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-black/[0.08] bg-white/80 px-3.5 py-2 shadow-sm">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-40" />
