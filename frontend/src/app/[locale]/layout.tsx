@@ -18,7 +18,13 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div lang={locale} dir={locale === "fa" ? "rtl" : "ltr"}>
+      <div
+        lang={locale}
+        dir={locale === "fa" ? "rtl" : "ltr"}
+        className={
+          locale === "fa" ? "font-[family-name:var(--font-estedad)]" : ""
+        }
+      >
         {children}
       </div>
     </NextIntlClientProvider>
