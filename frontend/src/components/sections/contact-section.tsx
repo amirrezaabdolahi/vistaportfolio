@@ -58,7 +58,7 @@ export function ContactSection() {
   const t = useTranslations("Contact");
   const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FieldErrors>({});
-  const [status, setStatus] = useState<"idle" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorSummary, setErrorSummary] = useState("");
 
   const update = <K extends keyof FormValues,>(key: K, value: FormValues[K]) => {
@@ -92,7 +92,7 @@ export function ContactSection() {
     return next;
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const nextErrors = validate();
     setErrors(nextErrors);
@@ -104,10 +104,26 @@ export function ContactSection() {
       return;
     }
 
-    // No contact API, email provider, or server action exists in this repository yet.
-    // Never report success until a real delivery mechanism is configured.
-    setStatus("error");
-    setErrorSummary(t("submissionUnavailable"));
+    setStatus("loading");
+    setErrorSummary("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Contact submission failed");
+      }
+
+      setStatus("success");
+      setValues(initialValues);
+    } catch {
+      setStatus("error");
+      setErrorSummary(t("submissionUnavailable"));
+    }
   };
 
   const fieldClass = "mt-2 min-h-12 w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-950 outline-none transition-colors placeholder:text-neutral-400 focus:border-neutral-500 focus:ring-2 focus:ring-neutral-900/10 aria-invalid:border-red-600 aria-invalid:focus:ring-red-600/10";
@@ -210,10 +226,22 @@ export function ContactSection() {
             </div>
 
             <div aria-live="polite" aria-atomic="true" className="mb-4">
+              {status === "success" && (
+                <p role="status" className="text-sm leading-6 text-green-700">
+                  Your project inquiry has been sent successfully.
+                </p>
+              )}
               {errorSummary && <p role="alert" className={`text-sm leading-6 ${status === "error" ? "text-amber-800" : "text-red-700"}`}>{errorSummary}</p>}
             </div>
-            <button type="submit" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 motion-reduce:transition-none sm:w-auto">
-              {t("submit")} <Send aria-hidden="true" size={15} />
+            <button type="submit" disabled={status === "loading"} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 motion-reduce:transition-none sm:w-auto">
+              {status === "loading" ? "Sending..." : t("submit")}
+              {status === "loading" ? (
+                <span aria-hidden="true" className="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white motion-reduce:animate-none" />
+              ) : status === "success" ? (
+                <Check aria-hidden="true" size={15} />
+              ) : (
+                <Send aria-hidden="true" size={15} />
+              )}
             </button>
             <p className="mt-3 text-xs leading-5 text-neutral-500">{t("submissionNote")}</p>
           </form>
