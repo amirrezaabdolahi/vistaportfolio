@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { ArrowUpRight, Check, Send } from "lucide-react";
+import { Check, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const services = ["web", "design", "ai", "seo", "consulting", "other"] as const;
@@ -526,21 +526,43 @@ export function ContactSection() {
             </div>
 
             <div aria-live="polite" aria-atomic="true" className="mb-4">
+              {status === "success" && (
+                <p role="status" className="text-sm leading-6 text-green-700">
+                  Your project inquiry has been sent successfully.
+                </p>
+              )}
+
               {errorSummary && (
                 <p
                   role="alert"
-                  className={`text-sm leading-6 ${status === "error" ? "text-amber-800" : "text-red-700"}`}
+                  className={`text-sm leading-6 ${
+                    status === "error" ? "text-amber-800" : "text-red-700"
+                  }`}
                 >
                   {errorSummary}
                 </p>
               )}
             </div>
+
             <button
               type="submit"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 motion-reduce:transition-none sm:w-auto"
+              disabled={status === "loading"}
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 motion-reduce:transition-none sm:w-auto"
             >
-              {t("submit")} <Send aria-hidden="true" size={15} />
+              {status === "loading" ? "Sending..." : t("submit")}
+
+              {status === "loading" ? (
+                <span
+                  aria-hidden="true"
+                  className="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white motion-reduce:animate-none"
+                />
+              ) : status === "success" ? (
+                <Check aria-hidden="true" size={15} />
+              ) : (
+                <Send aria-hidden="true" size={15} />
+              )}
             </button>
+
             <p className="mt-3 text-xs leading-5 text-neutral-500">
               {t("submissionNote")}
             </p>
