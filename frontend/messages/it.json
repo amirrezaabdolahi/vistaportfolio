@@ -208,7 +208,7 @@
     "questions": {
       "services": {
         "question": "Quali servizi offre Vista?",
-        "answer": "Vista riunisce sviluppo web, design UI/UX, intelligenza artificiale e automazione, SEO e marketing digitale, e consulenza IT. La combinazione più adatta dipende dai tuoi obiettivi e dalle sfide che vuoi affrontare."
+        "answer": "Vista riunisce sviluppo web, design UI/UX, intelligenza artificiale e automazione, SEO e marketing digitale, consulenza IT e creazione di contenuti. La combinazione più adatta dipende dai tuoi obiettivi e dalle sfide che vuoi affrontare."
       },
       "clients": {
         "question": "Con chi lavora Vista?",
@@ -233,6 +233,10 @@
       "earlyIdea": {
         "question": "E se avessi solo un'idea, senza un piano dettagliato?",
         "answer": "È un punto di partenza assolutamente valido. Possiamo parlare del problema da risolvere, esplorare possibili approcci e individuare i prossimi passi più utili prima di impegnarci in un progetto più ampio."
+      },
+      "contentCreation": {
+        "question": "Vista offre anche servizi di creazione di contenuti?",
+        "answer": "Sì. In base agli obiettivi e all'ambito del progetto, il supporto può includere testi per siti e landing page, articoli orientati alla SEO, messaggi di brand, contenuti per i social media o pianificazione editoriale. Definiamo insieme le attività pertinenti prima di iniziare."
       }
     }
   },
@@ -256,7 +260,8 @@
       "ai": "IA e automazione",
       "seo": "SEO e marketing digitale",
       "consulting": "Consulenza IT",
-      "other": "Altro"
+      "other": "Altro",
+      "contentCreation": "Creazione di contenuti"
     },
     "otherService": "Cos'altro hai in mente?",
     "projectTitle": "Raccontaci qualcosa del tuo progetto.",
@@ -326,5 +331,30 @@
     "footerNavigation": "Navigazione a piè di pagina",
     "copyright": "Tutti i diritti riservati.",
     "backToTop": "Torna su"
+  },
+  "Metadata": {
+    "title": "Vista — Sviluppo web, IA, SEO e creazione di contenuti",
+    "description": "Vista aiuta le aziende a crescere con sviluppo web, design UI/UX, IA e automazione, SEO e marketing digitale, consulenza IT e creazione di contenuti mirati.",
+    "keywords": [
+      "Vista",
+      "sviluppo web",
+      "design UI/UX",
+      "IA e automazione",
+      "SEO",
+      "marketing digitale",
+      "consulenza IT",
+      "creazione di contenuti",
+      "copywriting web",
+      "contenuti SEO",
+      "contenuti social"
+    ],
+    "services": [
+      "Sviluppo web",
+      "Design UI/UX",
+      "IA e automazione",
+      "SEO e marketing digitale",
+      "Consulenza IT",
+      "Creazione di contenuti"
+    ]
   }
 }

@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { Check, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const services = ["web", "design", "ai", "seo", "consulting", "other"] as const;
+const services = ["web", "design", "ai", "seo", "consulting", "contentCreation", "other"] as const;
 const stages = ["exploring", "defining", "ready", "improving"] as const;
 const supports = [
   "strategy",

@@ -208,7 +208,7 @@
     "questions": {
       "services": {
         "question": "Welche Leistungen bietet Vista an?",
-        "answer": "Vista vereint Webentwicklung, UI/UX-Design, KI und Automatisierung, SEO und digitales Marketing sowie IT-Beratung. Welche Kombination sinnvoll ist, hängt von Ihren Zielen und den Herausforderungen ab, die Sie lösen möchten."
+        "answer": "Vista vereint Webentwicklung, UI/UX-Design, KI und Automatisierung, SEO und digitales Marketing, IT-Beratung sowie Content-Erstellung. Welche Kombination sinnvoll ist, hängt von Ihren Zielen und den Herausforderungen ab, die Sie lösen möchten."
       },
       "clients": {
         "question": "Mit wem arbeitet Vista zusammen?",
@@ -233,6 +233,10 @@
       "earlyIdea": {
         "question": "Was, wenn ich bisher nur eine Idee und keinen konkreten Plan habe?",
         "answer": "Das ist ein völlig guter Ausgangspunkt. Wir können das Problem besprechen, das Sie lösen möchten, mögliche Ansätze erkunden und die sinnvollsten nächsten Schritte bestimmen, bevor Sie sich auf ein größeres Projekt festlegen."
+      },
+      "contentCreation": {
+        "question": "Unterstützt Vista auch bei der Content-Erstellung?",
+        "answer": "Ja. Je nach Zielen und Projektumfang kann die Unterstützung Website- und Landingpage-Texte, SEO-orientierte Artikel, Markenbotschaften, Social-Media-Inhalte oder redaktionelle Planung umfassen. Die passenden Leistungen stimmen wir vor Projektbeginn gemeinsam ab."
       }
     }
   },
@@ -256,7 +260,8 @@
       "ai": "KI und Automatisierung",
       "seo": "SEO und digitales Marketing",
       "consulting": "IT-Beratung",
-      "other": "Etwas anderes"
+      "other": "Etwas anderes",
+      "contentCreation": "Content-Erstellung"
     },
     "otherService": "Was haben Sie sonst im Sinn?",
     "projectTitle": "Erzählen Sie uns etwas über Ihr Projekt.",
@@ -326,5 +331,30 @@
     "footerNavigation": "Footer-Navigation",
     "copyright": "Alle Rechte vorbehalten.",
     "backToTop": "Nach oben"
+  },
+  "Metadata": {
+    "title": "Vista — Webentwicklung, KI, SEO und Content-Erstellung",
+    "description": "Vista unterstützt Unternehmen mit Webentwicklung, UI/UX-Design, KI und Automatisierung, SEO und digitalem Marketing, IT-Beratung und zielgerichteter Content-Erstellung.",
+    "keywords": [
+      "Vista",
+      "Webentwicklung",
+      "UI/UX-Design",
+      "KI-Automatisierung",
+      "SEO",
+      "digitales Marketing",
+      "IT-Beratung",
+      "Content-Erstellung",
+      "Website-Texte",
+      "SEO-Inhalte",
+      "Social-Media-Inhalte"
+    ],
+    "services": [
+      "Webentwicklung",
+      "UI/UX-Design",
+      "KI und Automatisierung",
+      "SEO und digitales Marketing",
+      "IT-Beratung",
+      "Content-Erstellung"
+    ]
   }
 }
