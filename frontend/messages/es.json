@@ -66,7 +66,7 @@
     "eyebrow": "TRABAJOS SELECCIONADOS",
     "title": "Convertimos ideas en realidad.",
     "description": "Una selección de experiencias digitales creadas con diseño meditado, ingeniería y tecnología inteligente.",
-    "count": "04 conceptos seleccionados",
+    "count": "05 conceptos seleccionados",
     "categoriesLabel": "Categorías del proyecto",
     "openProject": "Ver proyecto: {project}",
     "categories": {
@@ -96,6 +96,11 @@
       "title": "¿Tienes un proyecto en mente?",
       "description": "Convirtamos tu próxima idea en algo significativo.",
       "label": "Hablemos"
+    },
+    "contentCreation": {
+      "title": "Creación de contenido",
+      "description": "Una muestra de contenido centrada en la narrativa de marca: mensajes claros y atractivos que expresan la identidad de la marca y conectan con su audiencia.",
+      "imageAlt": "Muestra de creación de contenido centrada en la narrativa de marca y la conexión con la audiencia."
     }
   },
   "WhyChooseUs": {
