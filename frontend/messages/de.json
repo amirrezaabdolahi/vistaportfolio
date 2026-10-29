@@ -55,6 +55,11 @@
       "title": "IT-Beratung",
       "description": "Praktische Technologiestrategien und technische Beratung für fundierte Geschäftsentscheidungen.",
       "imageAlt": "IT-Beratungsservice"
+    },
+    "contentCreation": {
+      "title": "Content-Erstellung",
+      "description": "Ansprechende, zielgerichtete Inhalte, die den Wert Ihrer Marke vermitteln, Ihre Zielgruppe erreichen und Ihr digitales Wachstum unterstützen.",
+      "imageAlt": "Content-Erstellung als Dienstleistung"
     }
   },
   "Projects": {

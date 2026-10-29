@@ -55,6 +55,11 @@
       "title": "IT Consulting",
       "description": "Practical technology strategy and technical guidance to help businesses make informed decisions.",
       "imageAlt": "IT consulting service"
+    },
+    "contentCreation": {
+      "title": "Content Creation",
+      "description": "Engaging, purposeful content that communicates your brand’s value, connects with your audience, and supports your digital growth.",
+      "imageAlt": "Content creation service"
     }
   },
   "Projects": {

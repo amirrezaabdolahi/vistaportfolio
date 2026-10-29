@@ -9,7 +9,8 @@ type ServiceId =
   | "uiUxDesign"
   | "aiAutomation"
   | "seoMarketing"
-  | "itConsulting";
+  | "itConsulting"
+  | "contentCreation";
 
 type ServiceCardProps = {
   id: ServiceId;

@@ -55,6 +55,11 @@
       "title": "Consultoría de TI",
       "description": "Estrategia tecnológica práctica y orientación técnica para tomar decisiones empresariales bien fundamentadas.",
       "imageAlt": "Servicios de consultoría de TI"
+    },
+    "contentCreation": {
+      "title": "Creación de contenido",
+      "description": "Contenido atractivo y estratégico que comunica el valor de tu marca, conecta con tu audiencia e impulsa tu crecimiento digital.",
+      "imageAlt": "Servicio de creación de contenido"
     }
   },
   "Projects": {

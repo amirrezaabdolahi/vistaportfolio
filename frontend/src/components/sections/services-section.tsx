@@ -33,6 +33,12 @@ const services = [
     image: "/services_pics/itconsulting.webp",
     layout: "horizontal",
   },
+  {
+    id: "contentCreation",
+    number: "06",
+    image: "/services/contentcreator.webp",
+    layout: "horizontal",
+  },
 ] as const;
 
 export function ServicesSection() {
