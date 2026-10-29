@@ -66,7 +66,7 @@
     "eyebrow": "PROGETTI SELEZIONATI",
     "title": "Diamo forma alle idee.",
     "description": "Una selezione di esperienze digitali nate dall'incontro tra design attento, ingegneria e tecnologia intelligente.",
-    "count": "04 concept selezionati",
+    "count": "05 concept selezionati",
     "categoriesLabel": "Categorie del progetto",
     "openProject": "Visualizza il progetto: {project}",
     "categories": {
@@ -96,6 +96,11 @@
       "title": "Hai un progetto in mente?",
       "description": "Trasformiamo la tua prossima idea in qualcosa di significativo.",
       "label": "Parliamone"
+    },
+    "contentCreation": {
+      "title": "Creazione di contenuti",
+      "description": "Una presentazione di contenuti incentrata sul racconto del brand: messaggi chiari e coinvolgenti che esprimono l’identità del marchio e parlano al suo pubblico.",
+      "imageAlt": "Esempio di creazione di contenuti dedicato allo storytelling del brand e al coinvolgimento del pubblico."
     }
   },
   "WhyChooseUs": {

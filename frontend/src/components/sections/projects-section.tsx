@@ -33,6 +33,13 @@ const projects = [
     layout: "featured",
     categories: ["webDevelopment", "uiUxDesign"],
   },
+  {
+    id: "contentCreation",
+    number: "05",
+    image: "/projects/contentcreator.webp",
+    layout: "supporting",
+    categories: ["contentCreation"],
+  },
 ] as const;
 
 export function ProjectsSection() {

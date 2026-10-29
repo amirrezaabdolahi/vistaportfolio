@@ -66,7 +66,7 @@
     "eyebrow": "SELECTED WORK",
     "title": "Ideas made real.",
     "description": "A selection of digital experiences shaped by thoughtful design, engineering, and intelligent technology.",
-    "count": "04 selected concepts",
+    "count": "05 selected concepts",
     "categoriesLabel": "Project categories",
     "openProject": "View project: {project}",
     "categories": {
@@ -96,6 +96,11 @@
       "title": "Have a project in mind?",
       "description": "Let's turn your next idea into something meaningful.",
       "label": "Let's talk"
+    },
+    "contentCreation": {
+      "title": "Content Creation",
+      "description": "A content showcase focused on brand storytelling—shaping clear, engaging messages that express a brand’s voice and connect with its audience.",
+      "imageAlt": "Content creation showcase illustrating brand storytelling and audience engagement."
     }
   },
   "WhyChooseUs": {
