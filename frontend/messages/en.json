@@ -233,6 +233,10 @@
       "earlyIdea": {
         "question": "What if I only have an idea, not a detailed plan?",
         "answer": "That's a perfectly reasonable place to start. We can discuss the problem you're trying to solve, explore possible approaches, and identify the most useful next steps before committing to a larger project."
+      },
+      "contentCreation": {
+        "question": "Can Vista help with content creation?",
+        "answer": "Yes. Depending on your goals and project scope, content support may include website and landing-page copy, SEO-oriented articles, brand messaging, social media content, or editorial planning. We’ll agree on the relevant deliverables before work begins."
       }
     }
   },
@@ -256,7 +260,8 @@
       "ai": "AI & Automation",
       "seo": "SEO & Digital Marketing",
       "consulting": "IT Consulting",
-      "other": "Something Else"
+      "other": "Something Else",
+      "contentCreation": "Content Creation"
     },
     "otherService": "What else do you have in mind?",
     "projectTitle": "Tell us a little about your project.",
@@ -326,5 +331,30 @@
     "footerNavigation": "Footer navigation",
     "copyright": "All rights reserved.",
     "backToTop": "Back to top"
+  },
+  "Metadata": {
+    "title": "Vista — Web Development, AI, SEO & Content Creation",
+    "description": "Vista helps businesses grow with web development, UI/UX design, AI and automation, SEO and digital marketing, IT consulting, and purposeful content creation.",
+    "keywords": [
+      "Vista",
+      "web development",
+      "UI/UX design",
+      "AI automation",
+      "SEO",
+      "digital marketing",
+      "IT consulting",
+      "content creation",
+      "website copywriting",
+      "SEO content",
+      "social media content"
+    ],
+    "services": [
+      "Web Development",
+      "UI/UX Design",
+      "AI & Automation",
+      "SEO & Digital Marketing",
+      "IT Consulting",
+      "Content Creation"
+    ]
   }
 }
