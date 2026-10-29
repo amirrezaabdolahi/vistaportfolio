@@ -55,6 +55,11 @@
       "title": "Consulenza IT",
       "description": "Strategia tecnologica concreta e guida tecnica per prendere decisioni aziendali consapevoli.",
       "imageAlt": "Servizi di consulenza IT"
+    },
+    "contentCreation": {
+      "title": "Creazione di contenuti",
+      "description": "Contenuti coinvolgenti e mirati che comunicano il valore del tuo brand, creano un legame con il pubblico e sostengono la crescita digitale.",
+      "imageAlt": "Servizio di creazione di contenuti"
     }
   },
   "Projects": {
