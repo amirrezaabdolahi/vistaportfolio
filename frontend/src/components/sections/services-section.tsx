@@ -36,7 +36,7 @@ const services = [
   {
     id: "contentCreation",
     number: "06",
-    image: "/services/contentcreator.webp",
+    image: "/services_pics/contentcreator.webp",
     layout: "horizontal",
   },
 ] as const;
