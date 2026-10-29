@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import Image from "next/image";
 
 export function Hero() {
   const t = useTranslations("Hero");

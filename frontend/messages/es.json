@@ -12,8 +12,8 @@
   },
   "Hero": {
     "eyebrow": "SOLUCIONES DIGITALES CON IA",
-    "title": "Creamos experiencias digitales que impulsan a las empresas.",
-    "description": "Desde el diseño estratégico y el desarrollo web moderno hasta la automatización inteligente, ayudamos a las empresas a convertir ideas ambiciosas en resultados concretos.",
+    "title": "Haz que tu marca sea imposible de ignorar",
+    "description": "Creamos contenido visual prémium para marcas: desde fotografía de producto hasta vídeos cinematográficos y campañas publicitarias completas.",
     "primaryCta": "Iniciar un proyecto",
     "secondaryCta": "Explorar proyectos",
     "availability": "Disponibles para proyectos seleccionados",
@@ -28,8 +28,8 @@
   },
   "Services": {
     "eyebrow": "QUÉ HACEMOS",
-    "title": "Tecnología que impulsa tu negocio.",
-    "description": "Combinamos estrategia, diseño, ingeniería e IA para crear experiencias digitales que ayudan a las empresas a crecer.",
+    "title": "Contenido creativo, creado en torno a tu marca",
+    "description": "Desde imágenes de producto y vídeos publicitarios hasta contenido visual inmobiliario y experiencias digitales, creamos contenido adaptado a cómo tu negocio necesita presentarse.",
     "inquireAbout": "Hablemos de {service}",
     "webDevelopment": {
       "title": "Desarrollo web",

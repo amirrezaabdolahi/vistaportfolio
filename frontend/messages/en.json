@@ -12,8 +12,8 @@
   },
   "Hero": {
     "eyebrow": "AI-POWERED DIGITAL SOLUTIONS",
-    "title": "We build digital experiences that move businesses forward.",
-    "description": "From thoughtful design and modern web development to intelligent automation, we help businesses turn ambitious ideas into meaningful results.",
+    "title": "Make your brand impossible to overlook",
+    "description": "We create premium visual content for brands — from product imagery to cinematic videos and complete advertising campaigns.",
     "primaryCta": "Start a Project",
     "secondaryCta": "Explore Our Work",
     "availability": "Available for selected projects",
@@ -28,8 +28,8 @@
   },
   "Services": {
     "eyebrow": "WHAT WE DO",
-    "title": "Technology that moves your business forward.",
-    "description": "We combine strategy, design, engineering, and AI to build digital experiences that help businesses grow.",
+    "title": "Creative content, built around your brand",
+    "description": "From product imagery and campaign videos to property visuals and digital experiences, we create content designed around how your business needs to show up.",
     "inquireAbout": "Discuss {service}",
     "webDevelopment": {
       "title": "Web Development",

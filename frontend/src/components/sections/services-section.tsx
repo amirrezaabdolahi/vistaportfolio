@@ -4,6 +4,12 @@ import { ServiceCard } from "@/components/sections/service-card";
 
 const services = [
   {
+    id: "contentCreation",
+    number: "06",
+    image: "/services_pics/contentcreator.webp",
+    layout: "horizontal",
+  },
+  {
     id: "webDevelopment",
     number: "01",
     image: "/services_pics/webdevelopment.webp",
@@ -31,12 +37,6 @@ const services = [
     id: "itConsulting",
     number: "05",
     image: "/services_pics/itconsulting.webp",
-    layout: "horizontal",
-  },
-  {
-    id: "contentCreation",
-    number: "06",
-    image: "/services_pics/contentcreator.webp",
     layout: "horizontal",
   },
 ] as const;
