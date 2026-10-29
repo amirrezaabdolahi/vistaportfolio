@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 
 const questionKeys = [
   "services",
+  "contentCreation",
   "clients",
   "process",
   "singleService",
