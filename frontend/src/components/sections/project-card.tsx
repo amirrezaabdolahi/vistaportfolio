@@ -9,10 +9,11 @@ type ProjectCategory =
   | "webDevelopment"
   | "productDesign"
   | "uiUxDesign"
-  | "aiAutomation";
+  | "aiAutomation"
+  | "contentCreation";
 
 type ProjectCardProps = {
-  id: "saasDashboard" | "ecommercePlatform" | "aiAnalyticsPlatform" | "fintechWebApp";
+  id: "saasDashboard" | "ecommercePlatform" | "aiAnalyticsPlatform" | "fintechWebApp" | "contentCreation";
   number: string;
   image: string;
   layout: "featured" | "supporting";
@@ -111,7 +112,9 @@ export function ProjectCard({
                     ? "webDevelopment.title"
                     : category === "uiUxDesign"
                       ? "uiUxDesign.title"
-                      : "aiAutomation.title")}
+                      : category === "contentCreation"
+                        ? "contentCreation.title"
+                        : "aiAutomation.title")}
               </span>
             </li>
           ))}
