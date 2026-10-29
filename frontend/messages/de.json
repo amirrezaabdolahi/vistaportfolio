@@ -66,7 +66,7 @@
     "eyebrow": "AUSGEWÄHLTE ARBEITEN",
     "title": "Aus Ideen wird Realität.",
     "description": "Eine Auswahl digitaler Erlebnisse, geprägt von durchdachtem Design, Engineering und intelligenter Technologie.",
-    "count": "04 ausgewählte Konzepte",
+    "count": "05 ausgewählte Konzepte",
     "categoriesLabel": "Projektkategorien",
     "openProject": "Projekt ansehen: {project}",
     "categories": {
@@ -96,6 +96,11 @@
       "title": "Sie planen ein Projekt?",
       "description": "Machen wir aus Ihrer nächsten Idee etwas Bedeutungsvolles.",
       "label": "Kontakt aufnehmen"
+    },
+    "contentCreation": {
+      "title": "Content-Erstellung",
+      "description": "Eine Content-Präsentation mit Fokus auf Brand Storytelling: klare, ansprechende Botschaften, die die Markenidentität vermitteln und die Zielgruppe erreichen.",
+      "imageAlt": "Content-Erstellung mit Fokus auf Markengeschichte und Zielgruppenbindung."
     }
   },
   "WhyChooseUs": {
