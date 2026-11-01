@@ -30,18 +30,18 @@ export function Navbar() {
       <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           href="/"
-          className="flex items-center gap-2.5"
+          className="flex items-center"
           aria-label="Vista home"
           onClick={() => setIsMenuOpen(false)}
         >
-          <span className="flex size-9 shrink-0 items-center justify-center">
+          <span className="flex size-12 shrink-0 items-center justify-center">
             <Image
               alt=""
-              src="/vista-mark.svg"
-              width={36}
-              height={36}
+              src="/vista-mark_@.png"
+              width={100}
+              height={100}
               priority
-              className="size-9 object-contain"
+              className="size-12 object-contain"
             />
           </span>
 
