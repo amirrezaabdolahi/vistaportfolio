@@ -92,12 +92,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.vistateam.tech"),
+
   title: {
-    default: "Vista — AI & Digital Solutions",
+    default: "Vista | Creative Content & Digital Experiences",
     template: "%s | Vista",
   },
+
   description:
-    "We build digital experiences, AI solutions, and products that move businesses forward.",
+    "We create compelling visual content, cinematic videos, creative campaigns, and digital experiences that help brands stand out and grow.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

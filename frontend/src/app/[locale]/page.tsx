@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
       title: t("title"),
       description: t("description"),
       type: "website",
-      url: `https://vistateam.tech/${locale}`,
+      url: `https://www.vistateam.tech/${locale}`,
       siteName: "Vista",
       locale,
     },
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
 }
 
 
-export const instant = false;
+// export const instant = false;
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
