@@ -167,15 +167,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
 
     openGraph: {
-      type: "website",
-      siteName: "Vista",
       title: current.title,
       description: current.description,
-      url: `/${locale}`,
+      url: `${SITE_URL}/${locale}`,
+      siteName: "Vista",
       locale: current.ogLocale,
-      alternateLocale: ["en_US", "fa_IR", "de_DE", "it_IT", "es_ES"].filter(
-        (item) => item !== current.ogLocale,
-      ),
+      type: "website",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Vista — Create. Innovate. Grow.",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: current.title,
+      description: current.description,
+      images: ["/og-image.png"],
     },
 
     robots: {
@@ -223,9 +234,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
-          <SmoothScroll>
-            {children}
-          </SmoothScroll>
+          <SmoothScroll>{children}</SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>
