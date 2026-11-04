@@ -367,6 +367,14 @@
       "Content-Erstellung"
     ]
   },
+  "FromInputToCampaign": {
+    "eyebrow": "VOM INPUT ZUR KAMPAGNE",
+    "title": "Ein Produkt. Vielfältige kreative Möglichkeiten.",
+    "description": "Alles beginnt mit einigen Produktfotos. Wir entwickeln die kreative Richtung und verwandeln sie in ein abgestimmtes Set aus Kampagnenmotiven, Lifestyle-Bildern und Kurzvideos.",
+    "cta": "Mit Vista starten",
+    "imageAlt": "Ein einzelnes Produktbild, das die kreative Vorher-Nachher-Transformation zeigt.",
+    "imagePlaceholder": "URL des Vorher-Nachher-Bildes einfügen"
+  },
   "SelectedWorks2": {
     "eyebrow": "AUSGEWÄHLTE ARBEITEN",
     "title": "Ein Einblick in unsere Arbeit.",
