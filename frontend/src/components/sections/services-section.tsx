@@ -6,19 +6,19 @@ const services = [
   {
     id: "contentCreation",
     number: "01",
-    image: "/services_pics/contentcreationn.jpg",
+    image: "/services_pics/content-creation.webp",
     layout: "full",
   },
   {
     id: "webDevelopment",
     number: "02",
-    image: "/services_pics/webdevelop.png",
+    image: "/services_pics/web-development.webp",
     layout: "wide",
   },
   {
     id: "animationStorytelling",
     number: "03",
-    image: "/services_pics/animation&storytelling.png",
+    image: "/services_pics/animation-storytelling.webp",
     layout: "narrow",
   },
   // {
