@@ -367,6 +367,14 @@
       "Creazione di contenuti"
     ]
   },
+  "FromInputToCampaign": {
+    "eyebrow": "DALL’INPUT ALLA CAMPAGNA",
+    "title": "Un prodotto. Infinite possibilità creative.",
+    "description": "Si parte da alcune foto del prodotto. Definiamo la direzione creativa e le trasformiamo in un insieme coordinato di visual per campagne, immagini lifestyle e video brevi.",
+    "cta": "Crea con Vista",
+    "imageAlt": "Un’unica immagine del prodotto che mostra la trasformazione creativa prima e dopo.",
+    "imagePlaceholder": "Aggiungi l’URL dell’immagine prima/dopo"
+  },
   "SelectedWorks2": {
     "eyebrow": "PROGETTI SELEZIONATI",
     "title": "Uno sguardo a ciò che creiamo.",
