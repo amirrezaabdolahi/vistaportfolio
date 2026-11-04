@@ -3,7 +3,9 @@
 import { useEffect, useRef } from "react";
 import { useLenis } from "lenis/react";
 
-const VIDEO_SRC = "/hero_background_video_reversed.webm";
+// Scrub-optimized encode of hero_background_video-optimized.webm (see ffmpeg
+// command). Keep the original file as the master; this one is for the site.
+const VIDEO_SRC = "/hero_background_video-scrub.webm";
 
 // Add a first-frame image in /public if you want a fallback poster.
 const POSTER_SRC: string | undefined = undefined;
@@ -195,11 +197,10 @@ export function ScrollVideoBackground() {
     >
       {/*
         Orientation is pure CSS, driven by the document direction on <html>:
-        LTR locales (en, de, it, es) are mirrored with scaleX(-1); RTL (fa)
-        resets to scale-x-100. Only the <video> is transformed, not the
-        wrapper or the overlay. No React state, so there is no hydration
-        mismatch, and switching locales updates it as soon as <html dir>
-        changes.
+        LTR locales (en, de, it, es) show the video as-is; RTL (fa) mirrors it
+        with scaleX(-1). Only the <video> is transformed, not the wrapper or
+        the overlay. No React state, so there is no hydration mismatch, and
+        switching locales updates it as soon as <html dir> changes.
       */}
       <video
         ref={videoRef}
@@ -210,7 +211,7 @@ export function ScrollVideoBackground() {
         preload="none"
         poster={POSTER_SRC}
         tabIndex={-1}
-        className="absolute inset-0 size-full -scale-x-100 object-cover rtl:scale-x-100"
+        className="absolute inset-0 size-full object-cover rtl:-scale-x-100"
       />
 
       <div className="absolute inset-0" />
