@@ -367,6 +367,31 @@
       "Content-Erstellung"
     ]
   },
+  "FromConstructionToVisualExperience": {
+    "eyebrow": "ARCHITEKTONISCHE VISUALISIERUNG",
+    "title": "Vom Bau zur visuellen Erlebniswelt",
+    "description": "Wir verwandeln einfache Baustellenfotos in beeindruckende Architekturvisualisierungen. Von fotorealistischen Innen- und Außenansichten bis hin zu immersiven 3D-Animationen und cineastischen Videos erwecken wir Ihre architektonische Vision zum Leben – noch bevor das Projekt fertiggestellt ist.",
+    "imageAlt": "Architekturvisualisierung auf Grundlage eines Baustellenfotos.",
+    "imagePlaceholder": "Bildpfad der Architekturvisualisierung einfügen",
+    "services": {
+      "architecturalRenders": {
+        "title": "Architekturrenderings",
+        "description": "Fotorealistische Innen- und Außenvisualisierungen, die das volle Potenzial einer Immobilie zeigen."
+      },
+      "threeDVisualization": {
+        "title": "3D-Visualisierung",
+        "description": "Detaillierte Architekturvisualisierungen, die Räume verständlich machen, bevor der Bau abgeschlossen ist."
+      },
+      "threeDAnimations": {
+        "title": "3D-Animationen",
+        "description": "Immersive Architekturanimationen und Rundgänge, die Räume lebendig werden lassen."
+      },
+      "cinematicVideos": {
+        "title": "Cineastische Videos",
+        "description": "Professionelle Immobilienvideos zur Präsentation, Bewerbung und Vermarktung von Architekturprojekten."
+      }
+    }
+  },
   "FromInputToCampaign": {
     "eyebrow": "VOM INPUT ZUR KAMPAGNE",
     "title": "Ein Produkt. Vielfältige kreative Möglichkeiten.",
