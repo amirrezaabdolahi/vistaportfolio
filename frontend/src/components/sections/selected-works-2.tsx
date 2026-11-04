@@ -65,12 +65,10 @@ function PreviewCard({
       video.load();
     }
 
-    if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
-      void video.play().then(
-        () => setPreviewBlocked(false),
-        () => setPreviewBlocked(true),
-      );
-    }
+    void video.play().then(
+      () => setPreviewBlocked(false),
+      () => setPreviewBlocked(true),
+    );
   }, [isInView, project.previewSrc, reducedMotion]);
 
   useEffect(() => {
@@ -96,18 +94,10 @@ function PreviewCard({
           video.load();
         }
 
-        const playWhenReady = () => {
-          void video.play().then(
-            () => setPreviewBlocked(false),
-            () => setPreviewBlocked(true),
-          );
-        };
-
-        if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
-          playWhenReady();
-        } else {
-          video.addEventListener("canplay", playWhenReady, { once: true });
-        }
+        void video.play().then(
+          () => setPreviewBlocked(false),
+          () => setPreviewBlocked(true),
+        );
       },
       { threshold: 0.35 },
     );
@@ -130,12 +120,19 @@ function PreviewCard({
     startPreview();
   }, [isInView, previewBlocked, reducedMotion, startPreview]);
 
-  const handleTimeUpdate = () => {
+  const restartPreview = () => {
     const video = videoRef.current;
-    if (!video || video.currentTime < PREVIEW_DURATION) return;
+    if (!video || !isInView || reducedMotion) return;
 
     video.currentTime = 0;
     void video.play().catch(() => setPreviewBlocked(true));
+  };
+
+  const handleTimeUpdate = () => {
+    const video = videoRef.current;
+    if (video && video.currentTime >= PREVIEW_DURATION) {
+      restartPreview();
+    }
   };
 
   return (
@@ -159,6 +156,7 @@ function PreviewCard({
           aria-hidden="true"
           onLoadedData={() => setPreviewLoaded(true)}
           onTimeUpdate={handleTimeUpdate}
+          onEnded={restartPreview}
           onError={() => setPreviewBlocked(true)}
           className="absolute inset-0 size-full object-cover"
         />
