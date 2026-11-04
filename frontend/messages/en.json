@@ -373,7 +373,8 @@
     "description": "Start with a few product photos. We develop the creative direction and turn them into a coordinated set of campaign visuals, lifestyle imagery and short-form videos.",
     "cta": "Create with Vista",
     "imageAlt": "A single product image showing the before-and-after creative transformation.",
-    "imagePlaceholder": "Add your before / after image URL"
+    "imagePlaceholder": "Add your before / after image URL",
+    "visualLabel": "THE CREATIVE TRANSFORMATION"
   },
   "SelectedWorks2": {
     "eyebrow": "SELECTED WORKS",
