@@ -13,7 +13,9 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
-export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -32,7 +34,6 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
   };
 }
 
-
 // export const instant = false;
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
@@ -50,7 +51,9 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
       />
       <ScrollVideoBackground />
       <div className="relative z-10">
@@ -59,7 +62,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           <Hero />
           <ServicesSection />
           <SelectedWorks2 />
-          <ProjectsSection />
+          {/* <ProjectsSection /> */}
           <WhyChooseUsSection />
           <OurProcessSection />
           <AboutSection />
