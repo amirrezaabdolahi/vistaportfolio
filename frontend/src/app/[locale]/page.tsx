@@ -58,8 +58,8 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         <main>
           <Hero />
           <ServicesSection />
-          <ProjectsSection />
           <SelectedWorks2 />
+          <ProjectsSection />
           <WhyChooseUsSection />
           <OurProcessSection />
           <AboutSection />

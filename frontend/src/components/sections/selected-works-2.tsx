@@ -18,21 +18,21 @@ type VideoProject = {
 const VIDEO_PROJECTS: VideoProject[] = [
   {
     id: "01",
-    previewSrc: "/videos/selected-work-01-preview.mp4",
-    originalSrc: "/videos/selected-work-01.mp4",
-    posterSrc: "/videos/posters/selected-work-01.jpg",
+    previewSrc: "/projects/west-minster-preview.webm",
+    originalSrc: "/projects/west-full.webm",
+    posterSrc: "/projects/west-minster-preview-poster.png",
   },
   {
     id: "02",
-    previewSrc: "/videos/selected-work-02-preview.mp4",
-    originalSrc: "/videos/selected-work-02.mp4",
-    posterSrc: "/videos/posters/selected-work-02.jpg",
+    previewSrc: "/projects/ok2-preview.webm",
+    originalSrc: "/projects/ok2-full.webm",
+    posterSrc: "/projects/ok2-poster.png",
   },
   {
     id: "03",
-    previewSrc: "/videos/selected-work-03-preview.mp4",
-    originalSrc: "/videos/selected-work-03.mp4",
-    posterSrc: "/videos/posters/selected-work-03.jpg",
+    previewSrc: "/projects/ok22-preview.webm",
+    originalSrc: "/projects/ok22-full.webm",
+    posterSrc: "/projects/ok22-poster.png",
   },
 ];
 
