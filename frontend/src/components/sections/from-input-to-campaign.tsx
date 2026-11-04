@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 // Add the single before/after image URL here when it is ready.
-const transformationImageUrl = "";
+const transformationImageUrl = "/inputtocamin.webp";
 
 export function FromInputToCampaign() {
   const t = useTranslations("FromInputToCampaign");
@@ -74,9 +74,10 @@ export function FromInputToCampaign() {
               <Image
                 src={transformationImageUrl}
                 alt={t("imageAlt")}
-                fill
+                width={100}
+                height={100}
                 sizes="(min-width: 1024px) 55vw, 100vw"
-                className="object-cover"
+                className="object-cover w-full h-full"
                 priority={false}
               />
             ) : (
@@ -93,7 +94,9 @@ export function FromInputToCampaign() {
               <span className="text-xs font-medium uppercase tracking-[0.16em] text-white/75">
                 {t("visualLabel")}
               </span>
-              <span className="text-xs tabular-nums text-white/55">01 / 01</span>
+              <span className="text-xs tabular-nums text-white/55">
+                01 / 01
+              </span>
             </div>
           </div>
         </motion.div>

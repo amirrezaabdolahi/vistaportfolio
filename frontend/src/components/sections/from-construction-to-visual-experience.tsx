@@ -1,17 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Box,
-  Building2,
-  Clapperboard,
-  Video,
-} from "lucide-react";
+import { Box, Building2, Clapperboard, Video } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-// Insert the supplied image path here. Keep this as the section's only image.
-const constructionShowcaseImage = "";
+const constructionShowcaseImage = "/FromConstructionToVisualExperience.webp";
 
 const capabilities = [
   { id: "architecturalRenders", number: "01", Icon: Building2 },
@@ -69,7 +63,7 @@ export function FromConstructionToVisualExperience() {
                 alt={t("imageAlt")}
                 fill
                 sizes="(min-width: 1440px) 1344px, calc(100vw - 40px)"
-                className="object-contain"
+                className="object-cover"
                 priority={false}
               />
             ) : (

@@ -136,9 +136,9 @@ function PreviewCard({
   };
 
   return (
-    <article className="group min-w-0 w-[78vw] max-w-[360px] shrink-0 snap-start sm:w-[58vw] lg:w-auto lg:max-w-none lg:flex-1">
+    <article className="group min-w-0 w-[78vw] max-w-[360px] shrink-0 snap-start sm:w-[58vw] lg:w-auto lg:max-w-none lg:flex-1 ">
       <div
-        className="relative aspect-[9/16] overflow-hidden rounded-xl bg-neutral-100"
+        className="relative aspect-[9/16] overflow-hidden rounded-xl bg-neutral-100 "
         onPointerEnter={() => {
           if (previewBlocked) startPreview();
         }}
@@ -283,7 +283,7 @@ export function SelectedWorks2() {
 
   return (
     <section
-      aria-labelledby="selected-works-2-heading"
+      aria-labelledby="selected-works-2-heading "
       className="bg-white/45 py-24 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
@@ -305,7 +305,7 @@ export function SelectedWorks2() {
           </p>
         </div>
 
-        <div className="-mx-5 mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:gap-5 sm:px-8 lg:mx-0 lg:mt-16 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0 xl:gap-7">
+        <div className="-mx-5 mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto scrollbar-none! px-5 pb-3 sm:-mx-8 sm:gap-5 sm:px-8 lg:mx-0 lg:mt-16 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0 xl:gap-7">
           {VIDEO_PROJECTS.map((project) => (
             <PreviewCard
               key={project.id}
