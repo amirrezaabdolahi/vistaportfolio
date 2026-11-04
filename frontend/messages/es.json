@@ -366,5 +366,14 @@
       "Consultoría de TI",
       "Creación de contenido"
     ]
+  },
+  "SelectedWorks2": {
+    "eyebrow": "TRABAJOS SELECCIONADOS",
+    "title": "Un vistazo a lo que creamos.",
+    "description": "Descubre una selección de historias visuales y trabajos creativos de Vista, donde el movimiento y los detalles cobran vida.",
+    "openVideo": "Reproducir trabajo seleccionado {number}",
+    "closeVideo": "Cerrar vídeo",
+    "dialogLabel": "Trabajo seleccionado {number}",
+    "playPreview": "Reproducir vista previa"
   }
 }
