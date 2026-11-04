@@ -36,6 +36,11 @@
       "description": "High-performance websites and scalable digital products built around your business goals.",
       "imageAlt": "Web development service"
     },
+    "animationStorytelling": {
+      "title": "Animation & Storytelling",
+      "description": "Engaging animations and compelling visual stories that bring ideas to life, communicate your brand’s message, and create memorable experiences.",
+      "imageAlt": "Animation, motion design, and visual storytelling service"
+    },
     "uiUxDesign": {
       "title": "UI/UX Design",
       "description": "Intuitive, thoughtful interfaces that turn complex ideas into effortless user experiences.",

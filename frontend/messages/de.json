@@ -36,6 +36,11 @@
       "description": "Leistungsstarke Websites und skalierbare digitale Produkte, ausgerichtet auf Ihre Geschäftsziele.",
       "imageAlt": "Webentwicklungsservice"
     },
+    "animationStorytelling": {
+      "title": "Animation & Storytelling",
+      "description": "Fesselnde Animationen und ausdrucksstarkes visuelles Storytelling, die Ideen zum Leben erwecken, Ihre Markenbotschaft vermitteln und unvergessliche Erlebnisse schaffen.",
+      "imageAlt": "Service für Animation, Motion Design und visuelles Storytelling"
+    },
     "uiUxDesign": {
       "title": "UI/UX-Design",
       "description": "Intuitive, durchdachte Oberflächen, die komplexe Ideen in mühelose Nutzererlebnisse verwandeln.",

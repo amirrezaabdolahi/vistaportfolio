@@ -5,40 +5,40 @@ import { ServiceCard } from "@/components/sections/service-card";
 const services = [
   {
     id: "contentCreation",
-    number: "06",
-    image: "/services_pics/contentcreator.webp",
-    layout: "horizontal",
+    number: "01",
+    image: "/services_pics/contentcreationn.jpg",
+    layout: "full",
   },
   {
     id: "webDevelopment",
-    number: "01",
-    image: "/services_pics/webdevelopment.webp",
-    layout: "wide",
-  },
-  {
-    id: "uiUxDesign",
     number: "02",
-    image: "/services_pics/uiuxdesign.webp",
-    layout: "narrow",
-  },
-  {
-    id: "aiAutomation",
-    number: "03",
-    image: "/services_pics/ai&automations.webp",
-    layout: "narrow",
-  },
-  {
-    id: "seoMarketing",
-    number: "04",
-    image: "/services_pics/seo&marketing.jpg",
+    image: "/services_pics/webdevelop.png",
     layout: "wide",
   },
   {
-    id: "itConsulting",
-    number: "05",
-    image: "/services_pics/itconsulting.webp",
-    layout: "horizontal",
+    id: "animationStorytelling",
+    number: "03",
+    image: "/services_pics/animation&storytelling.png",
+    layout: "narrow",
   },
+  // {
+  //   id: "aiAutomation",
+  //   number: "03",
+  //   image: "/services_pics/ai&automations.webp",
+  //   layout: "narrow",
+  // },
+  // {
+  //   id: "seoMarketing",
+  //   number: "04",
+  //   image: "/services_pics/seo&marketing.jpg",
+  //   layout: "wide",
+  // },
+  // {
+  //   id: "itConsulting",
+  //   number: "05",
+  //   image: "/services_pics/itconsulting.webp",
+  //   layout: "horizontal",
+  // },
 ] as const;
 
 export function ServicesSection() {

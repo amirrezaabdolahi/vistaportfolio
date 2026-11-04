@@ -16,27 +16,24 @@ type ServiceCardProps = {
   id: ServiceId;
   number: string;
   image: string;
-  layout: "wide" | "narrow" | "horizontal";
+  layout: "wide" | "narrow" | "horizontal" | "full";
 };
 
 const layoutClasses: Record<ServiceCardProps["layout"], string> = {
   wide: "md:col-span-2 xl:col-span-7",
   narrow: "md:col-span-1 xl:col-span-5",
   horizontal: "md:col-span-2 xl:col-span-12",
+  full: "md:col-span-2 xl:col-span-12",
 };
 
 const imageSizes: Record<ServiceCardProps["layout"], string> = {
   wide: "(min-width: 1280px) 58vw, (min-width: 768px) 90vw, 100vw",
   narrow: "(min-width: 1280px) 42vw, (min-width: 768px) 45vw, 100vw",
   horizontal: "(min-width: 1280px) 40vw, 100vw",
+  full: "(min-width: 1280px) 100vw, 100vw",
 };
 
-export function ServiceCard({
-  id,
-  number,
-  image,
-  layout,
-}: ServiceCardProps) {
+export function ServiceCard({ id, number, image, layout }: ServiceCardProps) {
   const t = useTranslations("Services");
   const title = t(`${id}.title`);
   const isHorizontal = layout === "horizontal";
@@ -54,7 +51,11 @@ export function ServiceCard({
           className={
             isHorizontal
               ? "relative aspect-[4/3] overflow-hidden rounded-xl border border-black/[0.06] bg-neutral-100 md:aspect-[1.35/1]"
-              : `relative overflow-hidden rounded-xl border border-black/[0.06] bg-neutral-100 ${layout === "wide" ? "aspect-[1.65/1] sm:aspect-[1.8/1]" : "aspect-[1.15/1] sm:aspect-[1.25/1]"}`
+              : `relative overflow-hidden rounded-xl border border-black/[0.06] bg-neutral-100 ${
+                  layout === "narrow"
+                    ? "aspect-[1.15/1] sm:aspect-[1.25/1]"
+                    : "aspect-[1.65/1] sm:aspect-[1.8/1]"
+                }`
           }
         >
           <Image
