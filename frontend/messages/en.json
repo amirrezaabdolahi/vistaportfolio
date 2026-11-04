@@ -366,5 +366,14 @@
       "IT Consulting",
       "Content Creation"
     ]
+  },
+  "SelectedWorks2": {
+    "eyebrow": "SELECTED WORKS",
+    "title": "A glimpse of what we create.",
+    "description": "Explore a selection of Vista's visual storytelling and creative work, brought to life through motion and detail.",
+    "openVideo": "Play selected work {number}",
+    "closeVideo": "Close video",
+    "dialogLabel": "Selected work {number}",
+    "playPreview": "Play preview"
   }
 }

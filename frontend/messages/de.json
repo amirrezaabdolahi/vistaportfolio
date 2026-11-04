@@ -366,5 +366,14 @@
       "IT-Beratung",
       "Content-Erstellung"
     ]
+  },
+  "SelectedWorks2": {
+    "eyebrow": "AUSGEWÄHLTE ARBEITEN",
+    "title": "Ein Einblick in unsere Arbeit.",
+    "description": "Entdecken Sie eine Auswahl visueller Geschichten und kreativer Arbeiten von Vista – geprägt von Bewegung und Details.",
+    "openVideo": "Ausgewählte Arbeit {number} abspielen",
+    "closeVideo": "Video schließen",
+    "dialogLabel": "Ausgewählte Arbeit {number}",
+    "playPreview": "Vorschau abspielen"
   }
 }

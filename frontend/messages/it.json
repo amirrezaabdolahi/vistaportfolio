@@ -366,5 +366,14 @@
       "Consulenza IT",
       "Creazione di contenuti"
     ]
+  },
+  "SelectedWorks2": {
+    "eyebrow": "PROGETTI SELEZIONATI",
+    "title": "Uno sguardo a ciò che creiamo.",
+    "description": "Scopri una selezione di racconti visivi e lavori creativi di Vista, realizzati attraverso movimento e attenzione ai dettagli.",
+    "openVideo": "Riproduci il progetto selezionato {number}",
+    "closeVideo": "Chiudi video",
+    "dialogLabel": "Progetto selezionato {number}",
+    "playPreview": "Riproduci anteprima"
   }
 }
