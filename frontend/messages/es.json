@@ -367,6 +367,14 @@
       "Creación de contenido"
     ]
   },
+  "FromInputToCampaign": {
+    "eyebrow": "DEL MATERIAL INICIAL A LA CAMPAÑA",
+    "title": "Un producto. Múltiples posibilidades creativas.",
+    "description": "Todo empieza con unas pocas fotos del producto. Desarrollamos la dirección creativa y las convertimos en un conjunto coordinado de imágenes para campañas, fotografías lifestyle y vídeos cortos.",
+    "cta": "Crear con Vista",
+    "imageAlt": "Una única imagen del producto que muestra la transformación creativa del antes y el después.",
+    "imagePlaceholder": "Añade la URL de la imagen del antes y después"
+  },
   "SelectedWorks2": {
     "eyebrow": "TRABAJOS SELECCIONADOS",
     "title": "Un vistazo a lo que creamos.",
