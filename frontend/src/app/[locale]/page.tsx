@@ -3,6 +3,7 @@ import { ScrollVideoBackground } from "@/components/layout/scroll-video-backgrou
 import { Hero } from "@/components/sections/hero";
 import { ServicesSection } from "@/components/sections/services-section";
 import { FromInputToCampaign } from "@/components/sections/from-input-to-campaign";
+import { FromConstructionToVisualExperience } from "@/components/sections/from-construction-to-visual-experience";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { SelectedWorks2 } from "@/components/sections/selected-works-2";
 import { WhyChooseUsSection } from "@/components/sections/why-choose-us-section";
@@ -63,6 +64,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           <Hero />
           <ServicesSection />
           <FromInputToCampaign />
+          <FromConstructionToVisualExperience />
           <SelectedWorks2 />
           {/* <ProjectsSection /> */}
           <WhyChooseUsSection />
