@@ -316,8 +316,11 @@
       "15to30k": "€15,000–€30,000 (editable example)",
       "30kplus": "€30,000+ (editable example)",
       "unsure": "Not sure yet",
-      "preferNot": "Prefer not to say"
+      "preferNot": "Prefer not to say",
+      "custom": "Enter a custom amount"
     },
+    "budgetCustomLabel": "Your budget",
+    "budgetCustomPlaceholder": "e.g. 2000 USD or 2,000,000 toman",
     "budgetNote": "Example ranges only, not official Vista pricing. Configure these before launch.",
     "timelineTitle": "When would you like to get started?",
     "timelines": {
