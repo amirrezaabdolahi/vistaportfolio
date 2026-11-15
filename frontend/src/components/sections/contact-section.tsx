@@ -22,6 +22,7 @@ const budgets = [
   "30kplus",
   "unsure",
   "preferNot",
+  "custom",
 ] as const;
 const timelines = [
   "asap",
@@ -42,6 +43,7 @@ type FormValues = {
   stage: string;
   support: string[];
   budget: string;
+  budgetCustom: string;
   timeline: string;
   additionalContext: string;
 };
@@ -57,6 +59,7 @@ const initialValues: FormValues = {
   stage: "",
   support: [],
   budget: "",
+  budgetCustom: "",
   timeline: "",
   additionalContext: "",
 };
@@ -162,7 +165,10 @@ export function ContactSection() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        body: JSON.stringify({
+          ...values,
+          budget: values.budget === "custom" ? values.budgetCustom.trim() : values.budget,
+        }),
       });
 
       if (!response.ok) {
@@ -477,6 +483,28 @@ export function ContactSection() {
                       {t(`budgets.${budget}`)}
                     </label>
                   ))}
+                  {values.budget === "custom" && (
+                    <div className="mt-3">
+                      <label
+                        htmlFor="budgetCustom"
+                        className="mb-1.5 block text-sm font-medium text-neutral-900"
+                      >
+                        {t("budgetCustomLabel")}
+                      </label>
+                      <input
+                        id="budgetCustom"
+                        name="budgetCustom"
+                        type="text"
+                        inputMode="text"
+                        autoComplete="off"
+                        maxLength={50}
+                        value={values.budgetCustom}
+                        onChange={(event) => update("budgetCustom", event.target.value)}
+                        placeholder={t("budgetCustomPlaceholder")}
+                        className={fieldClass}
+                      />
+                    </div>
+                  )}
                 </div>
                 <p className="mt-3 text-xs leading-5 text-neutral-500">
                   {t("budgetNote")}
