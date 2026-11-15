@@ -367,6 +367,31 @@
       "Creazione di contenuti"
     ]
   },
+  "FromConstructionToVisualExperience": {
+    "eyebrow": "VISUALIZZAZIONE ARCHITETTONICA",
+    "title": "Dal cantiere all’esperienza visiva",
+    "description": "Trasformiamo semplici foto di cantiere in straordinarie visualizzazioni architettoniche. Dagli interni e dagli esterni fotorealistici alle animazioni 3D immersive e ai video cinematografici, diamo vita alla tua visione architettonica prima ancora che il progetto sia completato.",
+    "imageAlt": "Visualizzazione architettonica realizzata a partire da una fotografia del cantiere.",
+    "imagePlaceholder": "Inserisci il percorso dell’immagine architettonica",
+    "services": {
+      "architecturalRenders": {
+        "title": "Rendering architettonici",
+        "description": "Visualizzazioni fotorealistiche di interni ed esterni che comunicano tutto il potenziale di un immobile."
+      },
+      "threeDVisualization": {
+        "title": "Visualizzazione 3D",
+        "description": "Visualizzazioni architettoniche dettagliate che aiutano a comprendere gli spazi prima del completamento dei lavori."
+      },
+      "threeDAnimations": {
+        "title": "Animazioni 3D",
+        "description": "Animazioni architettoniche immersive e tour virtuali che danno vita agli spazi."
+      },
+      "cinematicVideos": {
+        "title": "Video cinematografici",
+        "description": "Video professionali per presentare, promuovere e commercializzare progetti architettonici e immobiliari."
+      }
+    }
+  },
   "FromInputToCampaign": {
     "eyebrow": "DALL’INPUT ALLA CAMPAGNA",
     "title": "Un prodotto. Infinite possibilità creative.",

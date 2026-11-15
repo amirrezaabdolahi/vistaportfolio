@@ -367,6 +367,31 @@
       "Creación de contenido"
     ]
   },
+  "FromConstructionToVisualExperience": {
+    "eyebrow": "VISUALIZACIÓN ARQUITECTÓNICA",
+    "title": "De la construcción a la experiencia visual",
+    "description": "Transformamos fotografías sencillas de obras en impresionantes visualizaciones arquitectónicas. Desde interiores y exteriores fotorrealistas hasta animaciones 3D inmersivas y vídeos cinematográficos, damos vida a tu visión arquitectónica incluso antes de que el proyecto esté terminado.",
+    "imageAlt": "Visualización arquitectónica creada a partir de una fotografía de una obra.",
+    "imagePlaceholder": "Añade la ruta de la imagen arquitectónica",
+    "services": {
+      "architecturalRenders": {
+        "title": "Renders arquitectónicos",
+        "description": "Visualizaciones fotorrealistas de interiores y exteriores que muestran todo el potencial de una propiedad."
+      },
+      "threeDVisualization": {
+        "title": "Visualización 3D",
+        "description": "Visualizaciones arquitectónicas detalladas que ayudan a comprender los espacios antes de finalizar la construcción."
+      },
+      "threeDAnimations": {
+        "title": "Animaciones 3D",
+        "description": "Animaciones arquitectónicas inmersivas y recorridos virtuales que dan vida a los espacios."
+      },
+      "cinematicVideos": {
+        "title": "Vídeos cinematográficos",
+        "description": "Vídeos profesionales de presentación inmobiliaria para mostrar, promocionar y comercializar proyectos arquitectónicos."
+      }
+    }
+  },
   "FromInputToCampaign": {
     "eyebrow": "DEL MATERIAL INICIAL A LA CAMPAÑA",
     "title": "Un producto. Múltiples posibilidades creativas.",
