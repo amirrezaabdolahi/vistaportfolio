@@ -48,10 +48,10 @@ function ProcessStage({
       <div className="relative z-10 flex justify-center md:mb-5 md:justify-start">
         <span
           className={[
-            "flex size-10 items-center justify-center rounded-full border bg-white transition-colors duration-300 motion-reduce:transition-none",
+            "flex size-10 items-center justify-center rounded-full border transition-colors duration-300 motion-reduce:transition-none",
             isActive
-              ? "border-neutral-900 text-neutral-950"
-              : "border-neutral-200 text-neutral-400",
+              ? "border-white bg-white text-neutral-950"
+              : "border-white/30 bg-neutral-950/50 text-white",
           ].join(" ")}
           aria-hidden="true"
         >
@@ -60,19 +60,18 @@ function ProcessStage({
       </div>
 
       <div className="min-w-0 md:pt-0">
-        <p
-          className={[
-            "mb-3 text-xs font-semibold tabular-nums tracking-[0.16em] transition-colors duration-300 motion-reduce:transition-none",
-            isActive ? "text-neutral-900" : "text-neutral-400",
-          ].join(" ")}
-        >
-          {number} <span className="ms-2 font-normal tracking-[0.12em]">{t("stageLabel")}</span>
+        <p className="mb-3 text-xs font-semibold tabular-nums tracking-[0.16em] text-white/65 sm:text-sm">
+          {number}{" "}
+          <span className="ms-2 font-normal tracking-[0.12em]">
+            {t("stageLabel")}
+          </span>
         </p>
 
-        <h3 className="text-pretty text-xl font-medium tracking-[-0.04em] text-neutral-950 sm:text-2xl">
+        <h3 className="text-pretty text-xl font-medium tracking-[-0.04em] text-white sm:text-2xl">
           {t(`stages.${id}.title`)}
         </h3>
-        <p className="mt-3 text-sm leading-7 text-neutral-600 sm:text-base sm:leading-8">
+
+        <p className="mt-3 text-sm leading-7 text-white/75 sm:text-base sm:leading-8">
           {t(`stages.${id}.description`)}
         </p>
 
@@ -80,11 +79,11 @@ function ProcessStage({
           {[0, 1, 2].map((index) => (
             <li
               key={index}
-              className="flex items-start gap-2.5 text-sm leading-6 text-neutral-500"
+              className="flex items-start gap-2.5 text-sm leading-6 text-white/70"
             >
               <span
                 aria-hidden="true"
-                className="mt-[0.62rem] size-1 shrink-0 rounded-full bg-neutral-300"
+                className="mt-[0.62rem] size-1 shrink-0 rounded-full bg-white/60"
               />
               <span>{t(`stages.${id}.details.${index}`)}</span>
             </li>
@@ -101,10 +100,12 @@ export function OurProcessSection() {
   const isRtl = locale === "fa";
   const sectionRef = useRef<HTMLElement>(null);
   const reduceMotion = useReducedMotion();
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start 0.78", "end 0.72"],
   });
+
   const lineProgress = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 28,
@@ -116,7 +117,29 @@ export function OurProcessSection() {
       ref={sectionRef}
       id="process"
       aria-labelledby="our-process-heading"
-      className="scroll-mt-24 overflow-hidden bg-white/65 py-24 sm:py-28 lg:py-32"
+      className="relative isolate scroll-mt-24 overflow-hidden bg-neutral-950 py-24 sm:py-28 lg:py-32"
+      style={{
+        backgroundImage: `
+          linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.70) 0%,
+            rgba(0, 0, 0, 0.40) 35%,
+            rgba(0, 0, 0, 0.40) 65%,
+            rgba(0, 0, 0, 0.70) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.10) 0%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(0, 0, 0, 0.10) 100%
+          ),
+          url("/VistaCorporateIdentityShowcase.webp")
+        `,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment : "fixed"
+      }}
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <motion.div
@@ -128,35 +151,40 @@ export function OurProcessSection() {
         >
           <div>
             <div className="mb-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-500 sm:text-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70 sm:text-sm">
                 {t("eyebrow")}
               </p>
-              <span aria-hidden="true" className="h-px w-8 bg-neutral-300" />
-              <p className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-400 sm:text-sm">
+
+              <span aria-hidden="true" className="h-px w-8 bg-white/40" />
+
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-white/55 sm:text-sm">
                 {t("supportingLabel")}
               </p>
             </div>
+
             <h2
               id="our-process-heading"
-              className="max-w-3xl text-balance text-4xl font-medium leading-[1.12] tracking-[-0.055em] text-neutral-950 sm:text-5xl lg:text-6xl"
+              className="max-w-3xl text-balance text-4xl font-medium leading-[1.12] tracking-[-0.055em] text-white sm:text-5xl lg:text-6xl"
             >
               {t("title")}
             </h2>
           </div>
 
-          <p className="max-w-xl text-base leading-8 text-neutral-600 sm:text-lg sm:leading-9 lg:justify-self-end lg:pb-1">
+          <p className="max-w-xl text-base leading-8 text-white/75 sm:text-lg sm:leading-9 lg:justify-self-end lg:pb-1">
             {t("description")}
           </p>
         </motion.div>
 
         <div className="relative mt-12 md:mt-16">
+          {/* Mobile progress line */}
           <div
             aria-hidden="true"
-            className="absolute bottom-5 start-[19px] top-5 w-px bg-neutral-200 md:hidden"
+            className="absolute bottom-5 start-[19px] top-5 w-px bg-white/20 md:hidden"
           />
+
           <motion.div
             aria-hidden="true"
-            className="absolute bottom-5 start-[19px] top-5 z-[1] w-px bg-neutral-900 md:hidden"
+            className="absolute bottom-5 start-[19px] top-5 z-[1] w-px bg-white md:hidden"
             style={
               reduceMotion
                 ? { scaleY: 1, transformOrigin: "top" }
@@ -164,13 +192,15 @@ export function OurProcessSection() {
             }
           />
 
+          {/* Desktop progress line */}
           <div
             aria-hidden="true"
-            className="absolute inset-x-0 top-5 hidden h-px bg-neutral-200 md:block"
+            className="absolute inset-x-0 top-5 hidden h-px bg-white/20 md:block"
           />
+
           <motion.div
             aria-hidden="true"
-            className="absolute inset-x-0 top-5 hidden h-px bg-neutral-900 md:block"
+            className="absolute inset-x-0 top-5 hidden h-px bg-white md:block"
             style={
               reduceMotion
                 ? {
@@ -196,13 +226,14 @@ export function OurProcessSection() {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-black/10 pt-8 sm:mt-20 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:pt-10">
-          <p className="max-w-2xl text-balance text-xl font-medium leading-relaxed tracking-[-0.035em] text-neutral-900 sm:text-2xl">
+        <div className="mt-16 border-t border-white/20 pt-8 sm:mt-20 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:pt-10">
+          <p className="max-w-2xl text-balance text-xl font-medium leading-relaxed tracking-[-0.035em] text-white sm:text-2xl">
             {t("closing")}
           </p>
+
           <Link
             href="#contact"
-            className="mt-5 inline-flex min-h-11 w-fit items-center border-b border-neutral-400 pb-1 text-sm font-medium text-neutral-900 transition-colors hover:border-neutral-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-4 motion-reduce:transition-none sm:mt-0"
+            className="mt-5 inline-flex min-h-11 w-fit items-center border-b border-white/50 pb-1 text-sm font-medium text-white transition-colors hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-neutral-950 motion-reduce:transition-none sm:mt-0"
           >
             {t("cta")}
           </Link>
