@@ -316,8 +316,11 @@
       "15to30k": "15.000–30.000 € (ejemplo editable)",
       "30kplus": "Más de 30.000 € (ejemplo editable)",
       "unsure": "Todavía no lo sé",
-      "preferNot": "Prefiero no decirlo"
+      "preferNot": "Prefiero no decirlo",
+      "custom": "Introducir una cantidad personalizada"
     },
+    "budgetCustomLabel": "Tu presupuesto",
+    "budgetCustomPlaceholder": "p. ej., 2.000 USD o 2.000.000 toman",
     "budgetNote": "Son rangos de ejemplo, no precios oficiales de Vista. Ajústalos antes del lanzamiento.",
     "timelineTitle": "¿Cuándo te gustaría empezar?",
     "timelines": {
