@@ -16,10 +16,6 @@ const supports = [
   "unsure",
 ] as const;
 const budgets = [
-  "under5k",
-  "5to15k",
-  "15to30k",
-  "30kplus",
   "unsure",
   "preferNot",
   "custom",
