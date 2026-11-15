@@ -316,8 +316,11 @@
       "15to30k": "15.000–30.000 € (editierbares Beispiel)",
       "30kplus": "Über 30.000 € (editierbares Beispiel)",
       "unsure": "Noch nicht sicher",
-      "preferNot": "Möchte ich nicht angeben"
+      "preferNot": "Möchte ich nicht angeben",
+      "custom": "Eigenen Betrag eingeben"
     },
+    "budgetCustomLabel": "Ihr Budget",
+    "budgetCustomPlaceholder": "z. B. 2.000 USD oder 2.000.000 Toman",
     "budgetNote": "Dies sind nur Beispielbereiche, keine offiziellen Vista-Preise. Bitte vor dem Start anpassen.",
     "timelineTitle": "Wann möchten Sie beginnen?",
     "timelines": {
